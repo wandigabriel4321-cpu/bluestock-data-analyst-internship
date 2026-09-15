@@ -1,0 +1,103 @@
+{
+  "info": {
+    "_postman_id": "4f0f43b9-92ce-4f41-a4be-1ef2fe4c231b",
+    "name": "Bluestock Week 2 - Exchange Rates API",
+    "description": "Public REST API request used for the Week 2 REST APIs and JSON assignment. It retrieves USD exchange rates for INR, EUR and GBP from 12 August to 11 September 2026.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get USD exchange-rate time series",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Status code is 200', function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "pm.test('Response is a JSON array', function () {",
+              "    const data = pm.response.json();",
+              "    pm.expect(data).to.be.an('array').that.is.not.empty;",
+              "});",
+              "",
+              "pm.test('Every record has the required fields', function () {",
+              "    const data = pm.response.json();",
+              "    data.forEach(function (record) {",
+              "        pm.expect(record).to.have.all.keys('date', 'base', 'quote', 'rate');",
+              "        pm.expect(record.base).to.eql('USD');",
+              "        pm.expect(['INR', 'EUR', 'GBP']).to.include(record.quote);",
+              "        pm.expect(record.rate).to.be.a('number').and.above(0);",
+              "    });",
+              "});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/v2/rates?from={{fromDate}}&to={{toDate}}&base={{baseCurrency}}&quotes={{quoteCurrencies}}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "v2",
+            "rates"
+          ],
+          "query": [
+            {
+              "key": "from",
+              "value": "{{fromDate}}"
+            },
+            {
+              "key": "to",
+              "value": "{{toDate}}"
+            },
+            {
+              "key": "base",
+              "value": "{{baseCurrency}}"
+            },
+            {
+              "key": "quotes",
+              "value": "{{quoteCurrencies}}"
+            }
+          ]
+        },
+        "description": "Returns a JSON array with one record per date and quote currency. No authentication is required."
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://api.frankfurter.dev"
+    },
+    {
+      "key": "fromDate",
+      "value": "2026-08-12"
+    },
+    {
+      "key": "toDate",
+      "value": "2026-09-11"
+    },
+    {
+      "key": "baseCurrency",
+      "value": "USD"
+    },
+    {
+      "key": "quoteCurrencies",
+      "value": "INR,EUR,GBP"
+    }
+  ]
+}
