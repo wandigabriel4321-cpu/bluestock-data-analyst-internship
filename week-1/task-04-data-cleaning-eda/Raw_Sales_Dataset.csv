@@ -1,0 +1,507 @@
+Order ID,Order Date,Customer ID,Customer Name,Segment,City,Region,Product ID,Product Name,Category,Quantity,Unit Price,Discount,Payment Method,Order Status
+ORD-0001,2025-10-14,CUS-027,Kabir Khan 2,Small Business,Mumbai,West,PRD-003,USB-C Hub,Electronics,1,1899,0.05,Net Banking,Completed
+ORD-0002,2025-09-03,CUS-026,Isha Mehta 2,Corporate,Jaipur,North,PRD-008,Storage Container Set,Home & Kitchen,1,999,0,Credit Card,Returned
+ORD-0003,2025-04-04,CUS-079,Siddharth Jain 4,Consumer,Kolkata,East,PRD-004,Laptop Stand,Office Supplies,5,1299,0.2,UPI,Completed
+ORD-0004,2025-01-02,CUS-041,Aarav Sharma 3,Corporate,Pune,West,PRD-011,Classic Wallet,Fashion,1,1199,0.05,Debit Card,Completed
+ORD-0005,2025-02-25,CUS-078,Nisha Bansal 4,Small Business,Jaipur,North,PRD-007,Electric Kettle,Home & Kitchen,4,1699,0,Credit Card,Cancelled
+ORD-0006,2025-05-13,CUS-044,Ananya Gupta 3,Corporate,Jaipur,North,PRD-012,Stainless Water Bottle,Lifestyle,4,799,0.1,Net Banking,Completed
+ORD-0007,2025-07-29,CUS-015,Karan Malhotra,Small Business,Chennai,South,PRD-006,Desk Organiser,Office Supplies,1,699,0.15,Net Banking,Cancelled
+ORD-0008,2025-04-09,CUS-039,Siddharth Jain 2,Small Business,Kolkata,East,PRD-003,USB-C Hub,Electronics,1,1899,0.15,UPI,Completed
+ORD-0009,2025-06-28,CUS-019,Siddharth Jain,Consumer,Hyderabad,South,PRD-009,Table Lamp,Home & Kitchen,4,1499,0.2,Cash on Delivery,Completed
+ORD-0010,2025-11-13,CUS-005,Arjun Verma,Corporate,Pune,West,PRD-008,Storage Container Set,Home & Kitchen,2,999,0,Credit Card,Completed
+ORD-0011,2025-05-18,CUS-003,Vihaan Singh,Small Business,Lucknow,North,PRD-008,Storage Container Set,Home & Kitchen,3,999,0.15,Net Banking,Returned
+ORD-0012,2025-01-18,CUS-076,Pooja Saxena 4,Consumer,Ahmedabad,West,PRD-003,USB-C Hub,Electronics,2,1899,0,UPI,Completed
+ORD-0013,2025-10-09,CUS-038,Nisha Bansal 2,Corporate,Ahmedabad,West,PRD-007,Electric Kettle,Home & Kitchen,5,1699,0.05,Cash on Delivery,Completed
+ORD-0014,2025-01-05,CUS-064,Ananya Gupta 4,Consumer,Delhi,North,PRD-009,Table Lamp,Home & Kitchen,5,1499,0.1,Cash on Delivery,Completed
+ORD-0015,2025-09-21,CUS-078,Nisha Bansal 4,Small Business,Chennai,South,PRD-002,Bluetooth Headphones,Electronics,1,2499,0.1,Cash on Delivery,Completed
+ORD-0016,2025-03-29,CUS-019,Siddharth Jain,Consumer,Kolkata,East,PRD-010,Travel Backpack,Fashion,1,2199,0.15,Debit Card,Completed
+ORD-0017,2025-10-06,CUS-079,Siddharth Jain 4,Consumer,Pune,West,PRD-007,Electric Kettle,Home & Kitchen,5,1699,0.05,Net Banking,Completed
+ORD-0018,2025-06-02,CUS-002,,Corporate,Hyderabad,South,PRD-001,Wireless Mouse,Electronics,4,899,0,Net Banking,Returned
+ORD-0019,2025-10-27,CUS-062,Diya Patel 4,Corporate,Lucknow,North,PRD-005,Executive Notebook,Office Supplies,5,349,0,Cash on Delivery,Completed
+ORD-0020,2025-12-24,CUS-006,Isha Mehta,Small Business,Pune,West,PRD-002,Bluetooth Headphones,Electronics,5,2499,0.15,Credit Card,Completed
+ORD-0021,2025-01-24,CUS-010,Saanvi Iyer,Consumer,Kolkata,East,PRD-008,Storage Container Set,Home & Kitchen,1,999,0.15,Credit Card,Completed
+ORD-0022,2025-12-04,CUS-022,Diya Patel 2,Consumer,Lucknow,North,PRD-006,Desk Organiser,Office Supplies,5,699,0,UPI,Completed
+ORD-0023,2025-07-15,CUS-014,Neha Rao,Corporate,Lucknow,North,PRD-002,Bluetooth Headphones,Electronics,1,2499,0.1,Credit Card,Completed
+ORD-0024,2025-05-11,CUS-036,Pooja Saxena 2,Small Business,Delhi,North,PRD-003,USB-C Hub,Electronics,4,1899,0.2,Net Banking,Returned
+ORD-0025,2025-01-20,CUS-043,Vihaan Singh 3,Consumer,Chennai,South,PRD-011,Classic Wallet,Fashion,3,1199,0.15,Debit Card,Completed
+ORD-0026,2025-04-12,CUS-003,Vihaan Singh,Small Business,Lucknow,North,PRD-003,USB-C Hub,Electronics,5,1899,0.1,Credit Card,Cancelled
+ORD-0027,2025-03-27,CUS-062,Diya Patel 4,Corporate,Bengaluru,South,PRD-012,Stainless Water Bottle,Lifestyle,1,799,0,Cash on Delivery,Completed
+ORD-0028,2025-04-07,CUS-029,Rohan Das 2,Corporate,Jaipur,North,PRD-012,Stainless Water Bottle,Lifestyle,1,799,0.15,Cash on Delivery,Cancelled
+ORD-0029,2025-01-30,CUS-074,Neha Rao 4,Corporate,Bengaluru,South,PRD-010,Travel Backpack,Fashion,4,2199,0,Net Banking,Returned
+ORD-0030,2025-06-12,CUS-058,Nisha Bansal 3,Consumer,Delhi,North,PRD-001,Wireless Mouse,Electronics,5,899,0,Debit Card,Completed
+ORD-0031,2025-02-20,CUS-021,Aarav Sharma 2,Small Business,Hyderabad,South,PRD-007,Electric Kettle,Home & Kitchen,1,1699,0.05,Cash on Delivery,Cancelled
+ORD-0032,2025-04-05,CUS-017,Vikram Yadav,Corporate,Ahmedabad,West,PRD-005,Executive Notebook,Office Supplies,5,349,0.15,Debit Card,Returned
+ORD-0033,2025-06-30,CUS-049,Rohan Das 3,Consumer,Jaipur,North,PRD-005,Executive Notebook,Office Supplies,1,349,0.05,Cash on Delivery,Completed
+ORD-0034,2025-11-03,CUS-031,Aditya Joshi 2,Consumer,Jaipur,North,PRD-006,Desk Organiser,Office Supplies,5,699,0,Net Banking,Completed
+ORD-0035,2025-07-21,CUS-062,Diya Patel 4,Corporate,Pune,West,PRD-001,Wireless Mouse,Electronics,1,899,0.1,Cash on Delivery,Completed
+ORD-0036,2025-11-22,CUS-002,Diya Patel,Corporate,Delhi,North,PRD-012,Stainless Water Bottle,Lifestyle,1,799,,UPI,Cancelled
+ORD-0037,2025-06-01,CUS-031,Aditya Joshi 2,Consumer,Jaipur,North,PRD-003,USB-C Hub,Electronics,3,1899,0.15,Net Banking,Cancelled
+ORD-0038,2025-10-23,CUS-073,Rahul Mishra 4,Consumer,Jaipur,North,PRD-003,USB-C Hub,Electronics,3,1899,0.2,Debit Card,Returned
+ORD-0039,2025-01-23,CUS-073,Rahul Mishra 4,Consumer,Ahmedabad,West,PRD-005,Executive Notebook,Office Supplies,5,349,0.1,Net Banking,Completed
+ORD-0040,2025-03-02,CUS-053,Rahul Mishra 3,Corporate,Hyderabad,South,PRD-004,Laptop Stand,Office Supplies,1,1299,0,Net Banking,Completed
+ORD-0041,2025-12-28,CUS-019,Siddharth Jain,Consumer,Delhi,North,PRD-009,Table Lamp,Home & Kitchen,1,1499,0.15,Cash on Delivery,Completed
+ORD-0042,2025-09-07,CUS-036,Pooja Saxena 2,Small Business,Kolkata,East,PRD-005,Executive Notebook,Office Supplies,2,349,0,UPI,Completed
+ORD-0043,2025-02-26,CUS-069,Rohan Das 4,Small Business,Delhi,North,PRD-012,Stainless Water Bottle,Lifestyle,2,799,0.1,Net Banking,Completed
+ORD-0044,2025-11-21,CUS-065,Arjun Verma 4,Corporate,Delhi,North,PRD-001,Wireless Mouse,Electronics,1,899,0.15,Net Banking,Completed
+ORD-0045,2025-10-24,CUS-023,Vihaan Singh 2,Corporate,Mumbai,West,PRD-010,Travel Backpack,Fashion,2,2199,0,Net Banking,Returned
+ORD-0046,2025-11-15,CUS-032,Priya Kapoor 2,Corporate,Kolkata,East,PRD-005,Executive Notebook,Office Supplies,2,349,0,Net Banking,Completed
+ORD-0047,2025-10-13,CUS-012,Priya Kapoor,Small Business,Lucknow,North,PRD-007,Electric Kettle,Home & Kitchen,4,1699,0,Net Banking,Completed
+ORD-0048,2025-10-07,CUS-075,Karan Malhotra 4,Small Business,Pune,West,PRD-008,Storage Container Set,Home & Kitchen,5,999,0.05,Net Banking,Completed
+ORD-0049,2025-12-19,CUS-043,Vihaan Singh 3,Consumer,Delhi,North,PRD-006,Desk Organiser,Office Supplies,1,699,0.05,Cash on Delivery,Returned
+ORD-0050,2025-02-27,CUS-018,Nisha Bansal,Small Business,Ahmedabad,West,PRD-003,USB-C Hub,Electronics,1,1899,0.1,Credit Card,Completed
+ORD-0051,2025-02-24,CUS-011,Aditya Joshi,Corporate,Pune,West,PRD-010,Travel Backpack,Fashion,1,2199,0.05,Credit Card,Completed
+ORD-0052,2025-04-15,CUS-067,Kabir Khan 4,Consumer,Jaipur,North,PRD-012,Stainless Water Bottle,Lifestyle,4,799,0,Cash on Delivery,Completed
+ORD-0053,2025-08-18,CUS-033,Rahul Mishra 2,Small Business,Lucknow,North,PRD-009,Table Lamp,Home & Kitchen,5,1499,0,Debit Card,Returned
+ORD-0054,2025-10-27,CUS-028,Meera Nair 2,Consumer,Mumbai,West,PRD-012,Stainless Water Bottle,Lifestyle,3,799,0,Net Banking,Cancelled
+ORD-0055,2025-03-19,CUS-006,Isha Mehta,Small Business,Pune, west ,PRD-010,Travel Backpack,Fashion,5,2199,0,Cash on Delivery,Completed
+ORD-0056,2025-03-14,CUS-054,Neha Rao 3,Small Business,Bengaluru,South,PRD-003,USB-C Hub,Electronics,4,1899,0.05,Credit Card,Returned
+ORD-0057,2025-05-05,CUS-023,Vihaan Singh 2,Corporate,Chennai,South,PRD-010,Travel Backpack,Fashion,1,2199,0.05,Credit Card,Returned
+ORD-0058,2025-12-01,CUS-074,Neha Rao 4,Corporate,Chennai,South,PRD-010,Travel Backpack,Fashion,5,2199,0.05,Net Banking,Completed
+ORD-0059,2025-07-14,CUS-024,Ananya Gupta 2,Small Business,Chennai,South,PRD-003,USB-C Hub,Electronics,5,1899,0,Cash on Delivery,Returned
+ORD-0060,2025-06-29,CUS-045,Arjun Verma 3,Small Business,Bengaluru,South,PRD-007,Electric Kettle,Home & Kitchen,2,1699,0,Debit Card,Completed
+ORD-0061,2025-03-08,CUS-070,Saanvi Iyer 4,Consumer,Ahmedabad,West,PRD-002,Bluetooth Headphones,Electronics,2,2499,0,UPI,Returned
+ORD-0062,2025-07-19,CUS-001,Aarav Sharma,Consumer,Kolkata,East,PRD-008,Storage Container Set,Home & Kitchen,5,999,0.1,Debit Card,Completed
+ORD-0063,2025-10-03,CUS-020,Kavya Reddy,Corporate,Pune,West,PRD-004,Laptop Stand,Office Supplies,5,1299,0.1,Credit Card,Completed
+ORD-0064,2025-04-11,CUS-030,Saanvi Iyer 2,Small Business,Chennai,South,PRD-005,Executive Notebook,Office Supplies,4,349,0,Net Banking,Completed
+ORD-0065,2025-02-28,CUS-038,Nisha Bansal 2,Corporate,Pune,West,PRD-009,Table Lamp,Home & Kitchen,5,1499,0,Net Banking,Completed
+ORD-0066,2025-06-29,CUS-032,Priya Kapoor 2,Corporate,Hyderabad,South,PRD-012,Stainless Water Bottle,Lifestyle,2,799,0,Net Banking,Cancelled
+ORD-0067,2025-08-22,CUS-034,Neha Rao 2,Consumer,Hyderabad,South,PRD-006,Desk Organiser,Office Supplies,1,699,0.1,Debit Card,Completed
+ORD-0068,2025-07-14,CUS-076,Pooja Saxena 4,Consumer,Jaipur,North,PRD-012,Stainless Water Bottle,Lifestyle,4,799,0.1,UPI,Completed
+ORD-0069,2025-04-28,CUS-061,Aarav Sharma 4,Consumer,Hyderabad,South,PRD-002,Bluetooth Headphones,Electronics,2,2499,0.05,Credit Card,Completed
+ORD-0070,2025-05-31,CUS-070,Saanvi Iyer 4,Consumer,Hyderabad,South,PRD-005,Executive Notebook,Office Supplies,2,349,0.15,Cash on Delivery,Completed
+ORD-0071,2025-10-11,CUS-071,Aditya Joshi 4,Corporate,Mumbai,West,PRD-009,Table Lamp,Home & Kitchen,2,1499,0,Cash on Delivery,Completed
+ORD-0072,2025-12-20,CUS-045,Arjun Verma 3,Small Business,Jaipur,North,PRD-008,Storage Container Set,Home & Kitchen,3,999,0.15,Net Banking,Completed
+ORD-0073,2025-11-01,CUS-031,Aditya Joshi 2,Consumer,Mumbai,West,PRD-006,Desk Organiser,Office Supplies,1,699,0.2,Credit Card,Completed
+ORD-0074,2025-10-08,CUS-069,Rohan Das 4,Small Business,Ahmedabad,West,PRD-002,Bluetooth Headphones,Electronics,1,2499,0.05,Cash on Delivery,Completed
+ORD-0075,2025-09-27,CUS-034,Neha Rao 2,Consumer,Jaipur,North,PRD-010,Travel Backpack,Fashion,5,2199,0,UPI,Completed
+ORD-0076,2025-08-20,CUS-072,Priya Kapoor 4,Small Business,Bengaluru,South,PRD-001,Wireless Mouse,Electronics,2,899,0.15,Net Banking,Completed
+ORD-0077,2025-12-11,CUS-045,Arjun Verma 3,Small Business,Chennai,South,PRD-005,Executive Notebook,Office Supplies,2,349,0.05,Debit Card,Completed
+ORD-0078,2025-09-25,CUS-010,Saanvi Iyer,Consumer,Jaipur,North,PRD-011,Classic Wallet,Fashion,4,1199,0.2,Net Banking,Cancelled
+ORD-0079,2025-02-28,CUS-046,Isha Mehta 3,Consumer,Mumbai,West,PRD-010,Travel Backpack,Fashion,4,2199,0.05,Cash on Delivery,Returned
+ORD-0080,2025-06-04,CUS-073,Rahul Mishra 4,Consumer,Bengaluru,South,PRD-004,Laptop Stand,Office Supplies,5,1299,0,Debit Card,Cancelled
+ORD-0081,2025-06-27,CUS-048,Meera Nair 3,Small Business,Chennai,South,PRD-008,Storage Container Set,Home & Kitchen,1,999,0.2,Cash on Delivery,Completed
+ORD-0082,2025-09-04,CUS-075,Karan Malhotra 4,Small Business,Chennai,South,PRD-007,Electric Kettle,Home & Kitchen,5,1699,0,UPI,Returned
+ORD-0083,2025-07-14,CUS-035,Karan Malhotra 2,Corporate,Kolkata,East,PRD-002,Bluetooth Headphones,Electronics,4,2499,0.1,Cash on Delivery,Returned
+ORD-0084,2025-07-22,CUS-042,Diya Patel 3,Small Business,Bengaluru,South,PRD-001,Wireless Mouse,Electronics,1,899,0,Cash on Delivery,Completed
+ORD-0085,2025-03-03,CUS-052,Priya Kapoor 3,Consumer,Kolkata,East,PRD-005,Executive Notebook,Office Supplies,4,349,0.2,UPI,Completed
+ORD-0086,2025-10-10,CUS-016,Pooja Saxena,Consumer,Chennai,South,PRD-008,Storage Container Set,Home & Kitchen,4,999,0,Debit Card,Cancelled
+ORD-0087,2025-02-12,CUS-039,,Small Business,Pune,West,PRD-012,Stainless Water Bottle,Lifestyle,2,799,0.2,Credit Card,Cancelled
+ORD-0088,2025-10-15,CUS-017,Vikram Yadav,Corporate,Delhi,North,PRD-007,Electric Kettle,Home & Kitchen,1,1699,0.05,Credit Card,Completed
+ORD-0089,2025-08-12,CUS-044,Ananya Gupta 3,Corporate,Jaipur,North,PRD-001,Wireless Mouse,Electronics,4,899,0.2,UPI,Completed
+ORD-0090,2025-12-29,CUS-054,Neha Rao 3,Small Business,Kolkata,East,PRD-007,Electric Kettle,Home & Kitchen,3,1699,0.2,Net Banking,Returned
+ORD-0091,2025-09-20,CUS-079,Siddharth Jain 4,Consumer,Bengaluru,South,PRD-008,Storage Container Set,Home & Kitchen,1,999,0.15,Cash on Delivery,Returned
+ORD-0092,2025-11-06,CUS-014,Neha Rao,Corporate,Kolkata,East,PRD-012,Stainless Water Bottle,Lifestyle,2,799,0.15,upi,Cancelled
+ORD-0093,2025-01-11,CUS-037,Vikram Yadav 2,Consumer,Hyderabad,South,PRD-001,Wireless Mouse,Electronics,2,899,0.15,Cash on Delivery,Completed
+ORD-0094,2025-10-17,CUS-064,Ananya Gupta 4,Consumer,Lucknow,North,PRD-004,Laptop Stand,Office Supplies,1,1299,0,Cash on Delivery,Cancelled
+ORD-0095,2025-02-05,CUS-051,Aditya Joshi 3,Small Business,Mumbai,West,PRD-006,Desk Organiser,Office Supplies,1,699,0.05,Net Banking,Cancelled
+ORD-0096,2025-09-09,CUS-074,Neha Rao 4,Corporate,Lucknow,North,PRD-003,USB-C Hub,Electronics,4,1899,0.2,Net Banking,Completed
+ORD-0097,2025-01-07,CUS-058,Nisha Bansal 3,Consumer,Jaipur,North,PRD-002,Bluetooth Headphones,Electronics,1,2499,0.05,Cash on Delivery,Completed
+ORD-0098,2025-07-21,CUS-019,Siddharth Jain,Consumer,Kolkata,East,PRD-007,Electric Kettle,Home & Kitchen,1,1699,0.1,Debit Card,Completed
+ORD-0099,2025-07-13,CUS-015,Karan Malhotra,Small Business,Jaipur,North,PRD-009,Table Lamp,Home & Kitchen,2,1499,0.2,Cash on Delivery,Completed
+ORD-0100,2025-08-14,CUS-023,Vihaan Singh 2,Corporate,Bengaluru,South,PRD-003,USB-C Hub,Electronics,3,1899,0.05,Net Banking,Cancelled
+ORD-0101,2025-02-18,CUS-033,Rahul Mishra 2,Small Business,Chennai,South,PRD-009,Table Lamp,Home & Kitchen,1,1499,0.15,UPI,Cancelled
+ORD-0102,2025-03-03,CUS-017,Vikram Yadav,Corporate,Jaipur,North,PRD-007,Electric Kettle,Home & Kitchen,1,1699,0.15,UPI,Returned
+ORD-0103,2025-01-10,CUS-048,Meera Nair 3,Small Business,Jaipur,North,PRD-011,Classic Wallet,Fashion,3,1199,0.15,Cash on Delivery,Completed
+ORD-0104,2025-05-03,CUS-076,Pooja Saxena 4,Consumer,Ahmedabad,West,PRD-011,Classic Wallet,Fashion,5,1199,0,UPI,Returned
+ORD-0105,2025-03-25,CUS-025,Arjun Verma 2,Consumer,Delhi,North,PRD-008,Storage Container Set,Home & Kitchen,2,999,0.05,Debit Card,Completed
+ORD-0106,2025-07-14,CUS-074,Neha Rao 4,Corporate,Delhi,North,PRD-005,Executive Notebook,Office Supplies,5,349,0,Credit Card,Completed
+ORD-0107,2025-07-26,CUS-061,Aarav Sharma 4,Consumer,Delhi,North,PRD-002,Bluetooth Headphones,Electronics,4,2499,0.15,Debit Card,Completed
+ORD-0108,2025-06-15,CUS-060,Kavya Reddy 3,Small Business,Jaipur,North,PRD-012,Stainless Water Bottle,Lifestyle,3,799,0.05,Credit Card,Completed
+ORD-0109,2025-07-02,CUS-047,Kabir Khan 3,Corporate,Bengaluru,South,PRD-002,Bluetooth Headphones,Electronics,1,2499,0.05,Cash on Delivery,Completed
+ORD-0110,2025-11-16,CUS-032,Priya Kapoor 2,Corporate,Jaipur,North,PRD-012,Stainless Water Bottle,Lifestyle,1,799,0,Net Banking,Returned
+ORD-0111,2025-08-11,CUS-021,Aarav Sharma 2,Small Business,Mumbai,West,PRD-007,Electric Kettle,Home & Kitchen,2,1699,0.15,Cash on Delivery,Completed
+ORD-0112,2025-01-25,CUS-029,Rohan Das 2,Corporate,Ahmedabad,West,PRD-002,Bluetooth Headphones,Electronics,2,2499,0,Net Banking,Completed
+ORD-0113,2025-01-27,CUS-043,Vihaan Singh 3,Consumer,Kolkata,East,PRD-001,Wireless Mouse,Electronics,3,899,0.15,Net Banking,Returned
+ORD-0114,2025-09-15,CUS-061,Aarav Sharma 4,Consumer,Mumbai,West,PRD-006,Desk Organiser,Office Supplies,4,699,0,Cash on Delivery,Completed
+ORD-0115,2025-08-21,CUS-068,Meera Nair 4,Corporate,Bengaluru,South,PRD-004,Laptop Stand,Office Supplies,3,1299,0.2,Net Banking,Completed
+ORD-0116,2025-03-19,CUS-071,Aditya Joshi 4,Corporate,Ahmedabad,West,PRD-007,Electric Kettle,Home & Kitchen,4,1699,0,Debit Card,Completed
+ORD-0117,2025-05-08,CUS-019,Siddharth Jain,Consumer,Bengaluru,South,PRD-010,Travel Backpack,Fashion,3,2199,0,UPI,Completed
+ORD-0118,2025-12-11,CUS-063,Vihaan Singh 4,Small Business,Pune,West,PRD-008,Storage Container Set,Home & Kitchen,4,999,0.05,Credit Card,Returned
+ORD-0119,2025-10-25,CUS-058,Nisha Bansal 3,Consumer,Bengaluru,South,PRD-009,Table Lamp,Home & Kitchen,2,1499,,Cash on Delivery,Completed
+ORD-0120,2025-05-27,CUS-060,Kavya Reddy 3,Small Business,Bengaluru,South,PRD-005,Executive Notebook,Office Supplies,2,349,0.1,Credit Card,Completed
+ORD-0121,2025-02-15,CUS-016,Pooja Saxena,Consumer,Ahmedabad,West,PRD-004,Laptop Stand,Office Supplies,1,1299,0,Debit Card,Completed
+ORD-0122,2025-05-15,CUS-044,Ananya Gupta 3,Corporate,Chennai,South,PRD-003,USB-C Hub,Electronics,4,1899,0.2,Credit Card,Completed
+ORD-0123,2025-10-18,CUS-015,Karan Malhotra,Small Business,Lucknow,North,PRD-002,Bluetooth Headphones,Electronics,1,2499,0.05,UPI,Completed
+ORD-0124,2025-12-10,CUS-005,Arjun Verma,Corporate,Hyderabad,South,PRD-010,Travel Backpack,Fashion,4,2199,0.05,Debit Card,Cancelled
+ORD-0125,2025-05-24,CUS-024,Ananya Gupta 2,Small Business,Jaipur,North,PRD-008,Storage Container Set,Home & Kitchen,3,999,0.15,Cash on Delivery,Completed
+ORD-0126,2025-11-09,CUS-074,Neha Rao 4,Corporate,Mumbai,West,PRD-011,Classic Wallet,Fashion,5,1199,0.2,Credit Card,Cancelled
+ORD-0127,2025-02-18,CUS-077,Vikram Yadav 4,Corporate,Mumbai,West,PRD-003,USB-C Hub,Electronics,1,1899,0.15,Cash on Delivery,Completed
+ORD-0128,2025-08-26,CUS-014,Neha Rao,Corporate,Bengaluru,South,PRD-010,Travel Backpack,Fashion,5,2199,0.1,Cash on Delivery,Completed
+ORD-0129,2025-09-07,CUS-030,Saanvi Iyer 2,Small Business,Kolkata,East,PRD-006,Desk Organiser,Office Supplies,2,699,0.1,Cash on Delivery,Completed
+ORD-0130,2025-09-07,CUS-059,Siddharth Jain 3,Corporate,Ahmedabad,West,PRD-001,Wireless Mouse,Electronics,2,899,0,Net Banking,Completed
+ORD-0131,2025-07-07,CUS-030,Saanvi Iyer 2,Small Business,Hyderabad,South,PRD-010,Travel Backpack,Fashion,5,2199,0.05,Debit Card,Completed
+ORD-0132,2025-03-21,CUS-052,Priya Kapoor 3,Consumer,Bengaluru,South,PRD-010,Travel Backpack,Fashion,2,2199,0.05,Cash on Delivery,Completed
+ORD-0133,2025-06-01,CUS-023,Vihaan Singh 2,Corporate,Pune,West,PRD-006,Desk Organiser,Office Supplies,2,699,0.2,Net Banking,Returned
+ORD-0134,2025-10-05,CUS-019,Siddharth Jain,Consumer,Jaipur,North,PRD-002,Bluetooth Headphones,Electronics,1,2499,0.1,UPI,Returned
+ORD-0135,2025-09-22,CUS-032,Priya Kapoor 2,Corporate,Mumbai,West,PRD-004,Laptop Stand,Office Supplies,3,1299,0.15,UPI,Cancelled
+ORD-0136,2025-09-14,CUS-040,Kavya Reddy 2,Consumer,Lucknow,North,PRD-001,Wireless Mouse,Electronics,4,899,0,Debit Card,Completed
+ORD-0137,2025-07-06,CUS-080,Kavya Reddy 4,Corporate,Lucknow,North,PRD-001,Wireless Mouse,Electronics,1,899,0.05,UPI,Completed
+ORD-0138,2025-05-04,CUS-063,Vihaan Singh 4,Small Business,Lucknow,North,PRD-010,Travel Backpack,Fashion,1,2199,0,Credit Card,Completed
+ORD-0139,2025-12-07,CUS-011,Aditya Joshi,Corporate,Delhi,North,PRD-003,USB-C Hub,Electronics,3,1899,0.05,Debit Card,Cancelled
+ORD-0140,2025-01-31,CUS-020,Kavya Reddy,Corporate,Kolkata,East,PRD-008,Storage Container Set,Home & Kitchen,3,999,0.1,Net Banking,Returned
+ORD-0141,2025-04-24,CUS-039,Siddharth Jain 2,Small Business,Delhi,North,PRD-012,Stainless Water Bottle,Lifestyle,3,799,0.1,Net Banking,Returned
+ORD-0142,2025-03-24,CUS-006,Isha Mehta,Small Business,Bengaluru,South,PRD-010,Travel Backpack,Fashion,1,2199,0,Credit Card,Completed
+ORD-0143,2025-06-04,CUS-032,Priya Kapoor 2,Corporate,Hyderabad,South,PRD-001,Wireless Mouse,Electronics,1,899,0.1,Cash on Delivery,Cancelled
+ORD-0144,2025-09-05,CUS-065,,Corporate,Ahmedabad,West,PRD-007,Electric Kettle,Home & Kitchen,4,1699,0,Net Banking,Completed
+ORD-0145,2025-09-01,CUS-026,Isha Mehta 2,Corporate,Ahmedabad,West,PRD-005,Executive Notebook,Office Supplies,3,349,0.1,Debit Card,Completed
+ORD-0146,2025-08-29,CUS-009,Rohan Das,Small Business,Lucknow,North,PRD-008,Storage Container Set,Home & Kitchen,5,999,0,Debit Card,Completed
+ORD-0147,2025-10-14,CUS-067,Kabir Khan 4,Consumer,Kolkata,East,PRD-007,Electric Kettle,Home & Kitchen,3,1699,0.15,Credit Card,Cancelled
+ORD-0148,2025-11-13,CUS-044,Ananya Gupta 3,Corporate,Jaipur,North,PRD-005,Executive Notebook,Office Supplies,4,349,0,Net Banking,Completed
+ORD-0149,2025-08-18,CUS-056,Pooja Saxena 3,Corporate,Hyderabad,South,PRD-011,Classic Wallet,Fashion,4,1199,0.2,UPI,Completed
+ORD-0150,2025-03-30,CUS-015,Karan Malhotra,Small Business,Jaipur,North,PRD-006,Desk Organiser,Office Supplies,2,699,0,Debit Card,Completed
+ORD-0151,2025-02-04,CUS-042,Diya Patel 3,Small Business,Mumbai,West,PRD-005,Executive Notebook,Office Supplies,1,349,0,Credit Card,Completed
+ORD-0152,2025-03-28,CUS-002,Diya Patel,Corporate,Pune,West,PRD-003,USB-C Hub,Electronics,2,1899,0.2,Credit Card,Cancelled
+ORD-0153,2025-03-01,CUS-030,Saanvi Iyer 2,Small Business,Lucknow,North,PRD-002,Bluetooth Headphones,Electronics,2,2499,0.2,Cash on Delivery,Returned
+ORD-0154,2025-05-10,CUS-066,Isha Mehta 4,Small Business,Jaipur,North,PRD-001,Wireless Mouse,Electronics,4,899,0,Net Banking,Completed
+ORD-0155,2025-12-17,CUS-017,Vikram Yadav,Corporate,Chennai,South,PRD-004,Laptop Stand,Office Supplies,1,1299,0,Cash on Delivery,Completed
+ORD-0156,2025-07-21,CUS-021,Aarav Sharma 2,Small Business,Kolkata,East,PRD-004,Laptop Stand,Office Supplies,2,1299,0,Debit Card,Completed
+ORD-0157,2025-11-27,CUS-075,Karan Malhotra 4,Small Business,Ahmedabad,West,PRD-007,Electric Kettle,Home & Kitchen,1,1699,0.1,Cash on Delivery,Completed
+ORD-0158,2025-05-07,CUS-073,Rahul Mishra 4,Consumer,Jaipur,North,PRD-007,Electric Kettle,Home & Kitchen,5,1699,0,Debit Card,Cancelled
+ORD-0159,2025-06-20,CUS-065,Arjun Verma 4,Corporate,Chennai,South,PRD-001,Wireless Mouse,Electronics,2,899,0.05,Net Banking,Completed
+ORD-0160,2025-04-18,CUS-042,Diya Patel 3,Small Business,Kolkata,East,PRD-006,Desk Organiser,Office Supplies,5,699,0.2,UPI,Completed
+ORD-0161,2025-07-13,CUS-041,Aarav Sharma 3,Corporate,Delhi,North,PRD-008,Storage Container Set,Home & Kitchen,2,999,0.2,Net Banking,Completed
+ORD-0162,2025-12-24,CUS-041,Aarav Sharma 3,Corporate,Delhi,North,PRD-012,Stainless Water Bottle,Lifestyle,1,799,0.15,Net Banking,Completed
+ORD-0163,2025-02-20,CUS-047,Kabir Khan 3,Corporate,Bengaluru,South,PRD-005,Executive Notebook,Office Supplies,4,349,0.1,Cash on Delivery,Cancelled
+ORD-0164,2025-09-25,CUS-043,Vihaan Singh 3,Consumer,Mumbai,West,PRD-004,Laptop Stand,Office Supplies,5,1299,0.1,Debit Card,Completed
+ORD-0165,2025-07-20,CUS-001,Aarav Sharma,Consumer,Pune,West,PRD-006,Desk Organiser,Office Supplies,5,699,0.15,UPI,Completed
+ORD-0166,2025-04-09,CUS-067,Kabir Khan 4,Consumer,Pune,West,PRD-006,Desk Organiser,Office Supplies,5,699,0.2,Credit Card,Completed
+ORD-0167,2025-03-19,CUS-076,Pooja Saxena 4,Consumer,Delhi,North,PRD-004,Laptop Stand,Office Supplies,1,1299,0.05,Debit Card,Returned
+ORD-0168,2025-12-14,CUS-028,Meera Nair 2,Consumer,Pune,West,PRD-011,Classic Wallet,Fashion,2,1199,0.15,Cash on Delivery,Returned
+ORD-0169,2025-12-01,CUS-077,Vikram Yadav 4,Corporate,Chennai,South,PRD-001,Wireless Mouse,Electronics,4,899,0,Debit Card,Completed
+ORD-0170,2025-10-06,CUS-036,Pooja Saxena 2,Small Business,Pune,West,PRD-005,Executive Notebook,Office Supplies,2,349,0,Cash on Delivery,Returned
+ORD-0171,2025-11-16,CUS-020,Kavya Reddy,Corporate,Ahmedabad,West,PRD-010,Travel Backpack,Fashion,4,2199,0.05,Credit Card,Returned
+ORD-0172,2025-06-12,CUS-077,Vikram Yadav 4,Corporate,Mumbai,West,PRD-010,Travel Backpack,Fashion,1,2199,0,Net Banking,Completed
+ORD-0173,2025-04-05,CUS-078,Nisha Bansal 4,Small Business,Ahmedabad,West,PRD-011,Classic Wallet,Fashion,3,1199,0.2,Debit Card,Completed
+ORD-0174,2025-08-20,CUS-067,Kabir Khan 4,Consumer,Pune,West,PRD-002,Bluetooth Headphones,Electronics,1,2499,0,UPI,Completed
+ORD-0175,2025-05-13,CUS-028,Meera Nair 2,Consumer,Delhi,North,PRD-002,Bluetooth Headphones,Electronics,2,2499,0.05,Credit Card,Completed
+ORD-0176,2025-06-15,CUS-031,Aditya Joshi 2,Consumer,Hyderabad,South,PRD-002,Bluetooth Headphones,Electronics,1,2499,0.1,Cash on Delivery,Returned
+ORD-0177,2025-05-09,CUS-018,Nisha Bansal,Small Business,Bengaluru,South,PRD-002,Bluetooth Headphones,Electronics,5,2499,0.2,Net Banking,Cancelled
+ORD-0178,2025-02-10,CUS-073,Rahul Mishra 4,Consumer,Ahmedabad,West,PRD-011,Classic Wallet,Fashion,5,1199,0.05,Cash on Delivery,Completed
+ORD-0179,2025-04-15,CUS-066,Isha Mehta 4,Small Business,Hyderabad,South,PRD-007,Electric Kettle,Home & Kitchen,2,1699,0,Credit Card,Completed
+ORD-0180,2025-05-22,CUS-033,Rahul Mishra 2,Small Business,Mumbai,West,PRD-008,Storage Container Set,Home & Kitchen,1,999,0,UPI,Completed
+ORD-0181,2025-10-14,CUS-009,Rohan Das,Small Business,Ahmedabad,West,PRD-010,Travel Backpack,Fashion,2,2199,0.1,Net Banking,Completed
+ORD-0182,2025-09-05,CUS-025,Arjun Verma 2,Consumer,Pune,West,PRD-007,Electric Kettle,Home & Kitchen,1,1699,0.15,Credit Card,Completed
+ORD-0183,2025-03-23,CUS-035,Karan Malhotra 2,Corporate,Jaipur,North,PRD-011,Classic Wallet,Fashion,4,1199,0.2,UPI,Completed
+ORD-0184,2025-05-04,CUS-080,Kavya Reddy 4,Corporate,Ahmedabad,West,PRD-004,Laptop Stand,Office Supplies,1,1299,0.2,Net Banking,Completed
+ORD-0185,2025-07-30,CUS-026,Isha Mehta 2,Corporate,Lucknow,North,PRD-011,Classic Wallet,Fashion,1,1199,0.15,Cash on Delivery,Cancelled
+ORD-0186,2025-02-03,CUS-039,Siddharth Jain 2,Small Business,Jaipur,North,PRD-007,Electric Kettle,Home & Kitchen,2,1699,0.05,Credit Card,Completed
+ORD-0187,2025-08-17,CUS-016,Pooja Saxena,Consumer,Delhi,North,PRD-003,USB-C Hub,Electronics,2,1899,0.05,Net Banking,Returned
+ORD-0188,2025-10-13,CUS-016,Pooja Saxena,Consumer,Mumbai,West,PRD-006,Desk Organiser,Office Supplies,5,699,0,Debit Card,Completed
+ORD-0189,2025-01-28,CUS-022,Diya Patel 2,Consumer,Lucknow,North,PRD-007,Electric Kettle,Home & Kitchen,4,1699,0,Debit Card,Completed
+ORD-0190,2025-06-10,CUS-015,Karan Malhotra,Small Business,Jaipur,North,PRD-002,Bluetooth Headphones,Electronics,2,2499,0,UPI,Returned
+ORD-0191,2025-03-27,CUS-069,Rohan Das 4,Small Business,Delhi, north ,PRD-009,Table Lamp,Home & Kitchen,5,1499,0.1,Debit Card,Completed
+ORD-0192,2025-03-02,CUS-037,Vikram Yadav 2,Consumer,Delhi,North,PRD-012,Stainless Water Bottle,Lifestyle,4,799,0.2,UPI,Completed
+ORD-0193,2025-05-25,CUS-015,Karan Malhotra,Small Business,Ahmedabad,West,PRD-003,USB-C Hub,Electronics,3,1899,0.2,Cash on Delivery,Cancelled
+ORD-0194,2025-03-31,CUS-002,Diya Patel,Corporate,Jaipur,North,PRD-001,Wireless Mouse,Electronics,1,899,0.05,Cash on Delivery,Cancelled
+ORD-0195,2025-10-03,CUS-030,Saanvi Iyer 2,Small Business,Hyderabad,South,PRD-004,Laptop Stand,Office Supplies,4,1299,0.2,UPI,Completed
+ORD-0196,2025-10-10,CUS-006,Isha Mehta,Small Business,Jaipur,North,PRD-007,Electric Kettle,Home & Kitchen,2,1699,0,Cash on Delivery,Completed
+ORD-0197,2025-05-24,CUS-032,Priya Kapoor 2,Corporate,Kolkata,East,PRD-006,Desk Organiser,Office Supplies,1,699,0,Cash on Delivery,Completed
+ORD-0198,2025-02-25,CUS-037,Vikram Yadav 2,Consumer,Chennai,South,PRD-005,Executive Notebook,Office Supplies,5,349,0.15,UPI,Completed
+ORD-0199,2025-12-17,CUS-022,Diya Patel 2,Consumer,Jaipur,North,PRD-004,Laptop Stand,Office Supplies,4,1299,0.05,Debit Card,Completed
+ORD-0200,2025-08-27,CUS-036,Pooja Saxena 2,Small Business,Pune,West,PRD-007,Electric Kettle,Home & Kitchen,4,1699,0,Credit Card,Returned
+ORD-0201,2025-07-01,CUS-012,Priya Kapoor,Small Business,Hyderabad,South,PRD-011,Classic Wallet,Fashion,3,1199,0.15,Credit Card,Completed
+ORD-0202,2025-09-16,CUS-058,Nisha Bansal 3,Consumer,Pune,West,PRD-003,USB-C Hub,Electronics,3,1899,0.2,Cash on Delivery,Cancelled
+ORD-0203,2025-04-17,CUS-024,Ananya Gupta 2,Small Business,Hyderabad,South,PRD-006,Desk Organiser,Office Supplies,1,699,0.1,Cash on Delivery,Returned
+ORD-0204,2025-06-24,CUS-025,Arjun Verma 2,Consumer,Pune,West,PRD-010,Travel Backpack,Fashion,2,2199,0.15,Cash on Delivery,Completed
+ORD-0205,2025-02-09,CUS-057,Vikram Yadav 3,Small Business,Bengaluru,South,PRD-007,Electric Kettle,Home & Kitchen,2,1699,0.2,Cash on Delivery,Completed
+ORD-0206,2025-06-19,CUS-069,Rohan Das 4,Small Business,Hyderabad,South,PRD-001,Wireless Mouse,Electronics,4,899,0.2,Debit Card,Returned
+ORD-0207,2025-12-13,CUS-009,Rohan Das,Small Business,Kolkata,East,PRD-011,Classic Wallet,Fashion,3,1199,0.1,Cash on Delivery,Completed
+ORD-0208,2025-09-08,CUS-048,Meera Nair 3,Small Business,Bengaluru,South,PRD-007,Electric Kettle,Home & Kitchen,5,1699,0,UPI,Completed
+ORD-0209,2025-06-11,CUS-004,Ananya Gupta,Consumer,Ahmedabad,West,PRD-008,Storage Container Set,Home & Kitchen,5,999,0.2,Net Banking,Returned
+ORD-0210,2025-06-01,CUS-021,Aarav Sharma 2,Small Business,Jaipur,North,PRD-001,Wireless Mouse,Electronics,3,899,0,Cash on Delivery,Completed
+ORD-0211,2025-04-17,CUS-049,Rohan Das 3,Consumer,Chennai,South,PRD-010,Travel Backpack,Fashion,2,2199,0.05,Net Banking,Cancelled
+ORD-0212,2025-02-11,CUS-068,Meera Nair 4,Corporate,Jaipur,North,PRD-010,Travel Backpack,Fashion,3,2199,0.05,Debit Card,Completed
+ORD-0213,2025-10-09,CUS-032,Priya Kapoor 2,Corporate,Jaipur,North,PRD-012,Stainless Water Bottle,Lifestyle,2,799,0,Credit Card,Returned
+ORD-0214,2025-10-30,CUS-024,Ananya Gupta 2,Small Business,Jaipur,North,PRD-012,Stainless Water Bottle,Lifestyle,1,799,0,Cash on Delivery,Returned
+ORD-0215,2025-01-03,CUS-024,Ananya Gupta 2,Small Business,Kolkata,East,PRD-011,Classic Wallet,Fashion,2,1199,0.05,UPI,Returned
+ORD-0216,2025-03-10,CUS-005,Arjun Verma,Corporate,Pune,West,PRD-009,Table Lamp,Home & Kitchen,1,1499,0.1,Cash on Delivery,Completed
+ORD-0217,2025-09-23,CUS-041,Aarav Sharma 3,Corporate,Pune,West,PRD-008,Storage Container Set,Home & Kitchen,3,999,0,Cash on Delivery,Returned
+ORD-0218,2025-09-08,CUS-001,Aarav Sharma,Consumer,Ahmedabad,West,PRD-002,Bluetooth Headphones,Electronics,4,2499,0.2,Credit Card,Completed
+ORD-0219,2025-04-04,CUS-047,Kabir Khan 3,Corporate,Delhi,North,PRD-006,Desk Organiser,Office Supplies,2,699,0.2,UPI,Returned
+ORD-0220,2025-09-25,CUS-027,Kabir Khan 2,Small Business,Lucknow,North,PRD-007,Electric Kettle,Home & Kitchen,2,1699,0,Debit Card,Completed
+ORD-0221,2025-01-31,CUS-010,Saanvi Iyer,Consumer,Delhi,North,PRD-004,Laptop Stand,Office Supplies,4,1299,0.15,Net Banking,Returned
+ORD-0222,2025-07-15,CUS-024,,Small Business,Hyderabad,South,PRD-012,Stainless Water Bottle,Lifestyle,1,799,0.2,Credit Card,Completed
+ORD-0223,2025-03-08,CUS-075,Karan Malhotra 4,Small Business,Lucknow,North,PRD-011,Classic Wallet,Fashion,1,1199,0.05,Debit Card,Completed
+ORD-0224,2025-10-10,CUS-071,Aditya Joshi 4,Corporate,Mumbai,West,PRD-008,Storage Container Set,Home & Kitchen,3,999,0.15,UPI,Completed
+ORD-0225,2025-10-26,CUS-053,Rahul Mishra 3,Corporate,Bengaluru,South,PRD-003,USB-C Hub,Electronics,2,1899,0,Debit Card,Completed
+ORD-0226,2025-11-07,CUS-064,Ananya Gupta 4,Consumer,Mumbai,West,PRD-002,Bluetooth Headphones,Electronics,1,2499,0,Cash on Delivery,Returned
+ORD-0227,2025-01-03,CUS-044,Ananya Gupta 3,Corporate,Hyderabad,South,PRD-008,Storage Container Set,Home & Kitchen,2,999,0.05,UPI,Returned
+ORD-0228,2025-01-18,CUS-013,Rahul Mishra,Consumer,Pune,West,PRD-002,Bluetooth Headphones,Electronics,5,2499,0.2,Debit Card,Returned
+ORD-0229,2025-08-25,CUS-006,Isha Mehta,Small Business,Lucknow,North,PRD-012,Stainless Water Bottle,Lifestyle,2,799,0.05,UPI,Returned
+ORD-0230,2025-12-03,CUS-022,Diya Patel 2,Consumer,Ahmedabad,West,PRD-009,Table Lamp,Home & Kitchen,5,1499,0.05,Cash on Delivery,Completed
+ORD-0231,2025-11-09,CUS-043,Vihaan Singh 3,Consumer,Pune,West,PRD-005,Executive Notebook,Office Supplies,1,349,0.2,Net Banking,Completed
+ORD-0232,2025-11-23,CUS-044,Ananya Gupta 3,Corporate,Kolkata,East,PRD-010,Travel Backpack,Fashion,3,2199,0.1,Net Banking,Completed
+ORD-0233,2025-03-16,CUS-024,Ananya Gupta 2,Small Business,Mumbai,West,PRD-010,Travel Backpack,Fashion,4,2199,0.1,Credit Card,Returned
+ORD-0234,2025-12-17,CUS-052,Priya Kapoor 3,Consumer,Kolkata,East,PRD-006,Desk Organiser,Office Supplies,2,699,0,Net Banking,Returned
+ORD-0235,2025-08-18,CUS-005,Arjun Verma,Corporate,Hyderabad,South,PRD-002,Bluetooth Headphones,Electronics,3,2499,0,Credit Card,Completed
+ORD-0236,2025-09-20,CUS-025,Arjun Verma 2,Consumer,Delhi,North,PRD-012,Stainless Water Bottle,Lifestyle,2,799,0.05,Cash on Delivery,Completed
+ORD-0237,2025-11-07,CUS-012,Priya Kapoor,Small Business,Hyderabad,South,PRD-001,Wireless Mouse,Electronics,5,899,0,Net Banking,Returned
+ORD-0238,2025-11-09,CUS-062,Diya Patel 4,Corporate,Bengaluru,South,PRD-012,Stainless Water Bottle,Lifestyle,5,799,0.15,Credit Card,Returned
+ORD-0239,2025-09-15,CUS-057,Vikram Yadav 3,Small Business,Ahmedabad,West,PRD-010,Travel Backpack,Fashion,3,2199,0.2,Credit Card,Cancelled
+ORD-0240,2025-04-25,CUS-079,Siddharth Jain 4,Consumer,Lucknow,North,PRD-007,Electric Kettle,Home & Kitchen,3,1699,0.15,Cash on Delivery,Completed
+ORD-0241,2025-02-18,CUS-035,Karan Malhotra 2,Corporate,Ahmedabad,West,PRD-007,Electric Kettle,Home & Kitchen,4,1699,0.2,Net Banking,Completed
+ORD-0242,2025-09-23,CUS-025,Arjun Verma 2,Consumer,Chennai,South,PRD-009,Table Lamp,Home & Kitchen,3,1499,0.05,UPI,Completed
+ORD-0243,2025-04-01,CUS-015,Karan Malhotra,Small Business,Ahmedabad,West,PRD-003,USB-C Hub,Electronics,1,1899,0,Debit Card,Completed
+ORD-0244,2025-09-04,CUS-049,Rohan Das 3,Consumer,Mumbai,West,PRD-005,Executive Notebook,Office Supplies,3,349,0.1,UPI,Completed
+ORD-0245,2025-12-12,CUS-020,Kavya Reddy,Corporate,Chennai,South,PRD-012,Stainless Water Bottle,Lifestyle,5,799,0.05,UPI,Completed
+ORD-0246,2025-07-19,CUS-033,Rahul Mishra 2,Small Business,Lucknow,North,PRD-009,Table Lamp,Home & Kitchen,4,1499,0.2,UPI,Completed
+ORD-0247,2025-09-01,CUS-051,Aditya Joshi 3,Small Business,Ahmedabad,West,PRD-005,Executive Notebook,Office Supplies,3,349,0.05,Credit Card,Returned
+ORD-0248,2025-08-03,CUS-049,Rohan Das 3,Consumer,Delhi,North,PRD-005,Executive Notebook,Office Supplies,4,349,0,Cash on Delivery,Completed
+ORD-0249,2025-10-08,CUS-020,Kavya Reddy,Corporate,Chennai,South,PRD-006,Desk Organiser,Office Supplies,2,699,0.15,Credit Card,Cancelled
+ORD-0250,2025-05-07,CUS-030,Saanvi Iyer 2,Small Business,Bengaluru,South,PRD-003,USB-C Hub,Electronics,2,1899,0.05,UPI,Cancelled
+ORD-0251,2025-02-01,CUS-001,Aarav Sharma,Consumer,Hyderabad,South,PRD-010,Travel Backpack,Fashion,4,2199,0.05,Net Banking,Cancelled
+ORD-0252,2025-12-22,CUS-055,Karan Malhotra 3,Consumer,Hyderabad,South,PRD-002,Bluetooth Headphones,Electronics,4,2499,0.05,Debit Card,Completed
+ORD-0253,2025-06-13,CUS-069,Rohan Das 4,Small Business,Delhi,North,PRD-007,Electric Kettle,Home & Kitchen,5,1699,0.05,Cash on Delivery,Completed
+ORD-0254,2025-08-01,CUS-022,Diya Patel 2,Consumer,Kolkata,East,PRD-009,Table Lamp,Home & Kitchen,2,1499,0.2,Credit Card,Returned
+ORD-0255,2025-05-02,CUS-061,Aarav Sharma 4,Consumer,Hyderabad,South,PRD-008,Storage Container Set,Home & Kitchen,2,999,0.1,Credit Card,Cancelled
+ORD-0256,2025-12-29,CUS-049,Rohan Das 3,Consumer,Jaipur,North,PRD-009,Table Lamp,Home & Kitchen,3,1499,0,Cash on Delivery,Completed
+ORD-0257,2025-11-02,CUS-028,Meera Nair 2,Consumer,Chennai,South,PRD-012,Stainless Water Bottle,Lifestyle,2,799,0.15,Debit Card,Cancelled
+ORD-0258,2025-05-31,CUS-007,Kabir Khan,Consumer,Hyderabad,South,PRD-002,Bluetooth Headphones,Electronics,4,2499,0,UPI,Completed
+ORD-0259,2025-07-13,CUS-010,Saanvi Iyer,Consumer,Hyderabad,South,PRD-006,Desk Organiser,Office Supplies,4,699,0,Debit Card,Returned
+ORD-0260,2025-05-11,CUS-004,Ananya Gupta,Consumer,Hyderabad,South,PRD-010,Travel Backpack,Fashion,3,2199,0,Credit Card,Completed
+ORD-0261,2025-05-23,CUS-012,Priya Kapoor,Small Business,Lucknow,North,PRD-008,Storage Container Set,Home & Kitchen,4,999,0.05,UPI,Completed
+ORD-0262,2025-10-20,CUS-041,Aarav Sharma 3,Corporate,Jaipur,North,PRD-010,Travel Backpack,Fashion,3,2199,0.15,Net Banking,Completed
+ORD-0263,2025-12-18,CUS-018,Nisha Bansal,Small Business,Bengaluru,South,PRD-009,Table Lamp,Home & Kitchen,4,1499,0,Debit Card,Completed
+ORD-0264,2025-04-23,CUS-059,Siddharth Jain 3,Corporate,Lucknow,North,PRD-011,Classic Wallet,Fashion,5,1199,0.05,Debit Card,Completed
+ORD-0265,2025-02-22,CUS-073,Rahul Mishra 4,Consumer,Mumbai,West,PRD-006,Desk Organiser,Office Supplies,2,699,0,Credit Card,Completed
+ORD-0266,2025-03-25,CUS-016,Pooja Saxena,Consumer,Ahmedabad,West,PRD-003,USB-C Hub,Electronic,4,1899,0.2,Credit Card,Completed
+ORD-0267,2025-01-31,CUS-073,Rahul Mishra 4,Consumer,Jaipur,North,PRD-007,Electric Kettle,Home & Kitchen,4,1699,0.2,UPI,Returned
+ORD-0268,2025-05-05,CUS-075,Karan Malhotra 4,Small Business,Hyderabad,South,PRD-010,Travel Backpack,Fashion,5,2199,0.1,UPI,Returned
+ORD-0269,2025-09-06,CUS-031,Aditya Joshi 2,Consumer,Ahmedabad,West,PRD-008,Storage Container Set,Home & Kitchen,5,999,0,UPI,Completed
+ORD-0270,2025-05-30,CUS-050,Saanvi Iyer 3,Corporate,Pune,West,PRD-002,Bluetooth Headphones,Electronics,2,2499,0.15,Cash on Delivery,Completed
+ORD-0271,2025-09-08,CUS-042,Diya Patel 3,Small Business,Kolkata,East,PRD-001,Wireless Mouse,Electronics,4,899,0.2,Cash on Delivery,Completed
+ORD-0272,2025-07-08,CUS-003,Vihaan Singh,Small Business,Lucknow,North,PRD-003,USB-C Hub,Electronics,2,1899,0.15,Net Banking,Returned
+ORD-0273,2025-08-09,CUS-022,Diya Patel 2,Consumer,Hyderabad,South,PRD-001,Wireless Mouse,Electronics,1,899,0.05,Credit Card,Completed
+ORD-0274,2025-10-11,CUS-033,Rahul Mishra 2,Small Business,Hyderabad,South,PRD-009,Table Lamp,Home & Kitchen,5,1499,0.1,UPI,Completed
+ORD-0275,2025-04-19,CUS-026,Isha Mehta 2,Corporate,Pune,West,PRD-003,USB-C Hub,Electronics,2,1899,0.15,Debit Card,Completed
+ORD-0276,2025-11-03,CUS-064,Ananya Gupta 4,Consumer,Lucknow,North,PRD-006,Desk Organiser,Office Supplies,3,699,0.1,UPI,Completed
+ORD-0277,2025-01-11,CUS-051,Aditya Joshi 3,Small Business,Jaipur,North,PRD-011,Classic Wallet,Fashion,3,1199,0,UPI,Completed
+ORD-0278,2025-02-07,CUS-041,Aarav Sharma 3,Corporate,Delhi,North,PRD-010,Travel Backpack,Fashion,4,2199,,UPI,Completed
+ORD-0279,2025-02-05,CUS-010,Saanvi Iyer,Consumer,Jaipur,North,PRD-011,Classic Wallet,Fashion,5,1199,0.1,Net Banking,Cancelled
+ORD-0280,2025-11-23,CUS-050,Saanvi Iyer 3,Corporate,Jaipur,North,PRD-006,Desk Organiser,Office Supplies,3,699,0,Cash on Delivery,Completed
+ORD-0281,2025-12-26,CUS-028,Meera Nair 2,Consumer,Jaipur,North,PRD-005,Executive Notebook,Office Supplies,5,349,0.05,Net Banking,Completed
+ORD-0282,2025-05-28,CUS-053,Rahul Mishra 3,Corporate,Delhi,North,PRD-012,Stainless Water Bottle,Lifestyle,3,799,0.05,Credit Card,Completed
+ORD-0283,2025-01-24,CUS-012,Priya Kapoor,Small Business,Mumbai,West,PRD-008,Storage Container Set,Home & Kitchen,3,999,0.1,Cash on Delivery,Returned
+ORD-0284,2025-11-03,CUS-011,Aditya Joshi,Corporate,Jaipur,North,PRD-008,Storage Container Set,Home & Kitchen,3,999,0.1,Cash on Delivery,Completed
+ORD-0285,2025-05-27,CUS-015,Karan Malhotra,Small Business,Mumbai,West,PRD-009,Table Lamp,Home & Kitchen,1,1499,0,Credit Card,Completed
+ORD-0286,2025-01-28,CUS-030,Saanvi Iyer 2,Small Business,Mumbai,West,PRD-011,Classic Wallet,Fashion,1,1199,0,Net Banking,Completed
+ORD-0287,2025-04-25,CUS-072,Priya Kapoor 4,Small Business,Delhi,North,PRD-007,Electric Kettle,Home & Kitchen,5,1699,0.15,Credit Card,Cancelled
+ORD-0288,2025-01-02,CUS-069,Rohan Das 4,Small Business,Hyderabad,South,PRD-001,Wireless Mouse,Electronics,4,899,0.15,Net Banking,Completed
+ORD-0289,2025-10-01,CUS-049,Rohan Das 3,Consumer,Jaipur,North,PRD-011,Classic Wallet,Fashion,1,1199,0,Cash on Delivery,Completed
+ORD-0290,2025-01-19,CUS-029,Rohan Das 2,Corporate,Kolkata,East,PRD-007,Electric Kettle,Home & Kitchen,5,1699,0.1,Debit Card,Returned
+ORD-0291,2025-07-26,CUS-070,Saanvi Iyer 4,Consumer,Jaipur,North,PRD-004,Laptop Stand,Office Supplies,5,1299,0.15,UPI,Completed
+ORD-0292,2025-12-06,CUS-025,Arjun Verma 2,Consumer,Pune,West,PRD-002,Bluetooth Headphones,Electronics,4,2499,0.1,Debit Card,Returned
+ORD-0293,2025-04-21,CUS-034,Neha Rao 2,Consumer,Ahmedabad,West,PRD-010,Travel Backpack,Fashion,3,2199,0,Net Banking,Completed
+ORD-0294,2025-01-30,CUS-068,Meera Nair 4,Corporate,Ahmedabad,West,PRD-002,Bluetooth Headphones,Electronics,5,2499,0.1,Net Banking,Completed
+ORD-0295,2025-05-19,CUS-033,Rahul Mishra 2,Small Business,Hyderabad,South,PRD-002,Bluetooth Headphones,Electronics,3,2499,0,Credit Card,Completed
+ORD-0296,2025-12-14,CUS-072,Priya Kapoor 4,Small Business,Bengaluru,South,PRD-009,Table Lamp,Home & Kitchen,5,1499,0,Credit Card,Completed
+ORD-0297,2025-01-27,CUS-055,Karan Malhotra 3,Consumer,Bengaluru,South,PRD-003,USB-C Hub,Electronics,5,1899,0,Net Banking,Completed
+ORD-0298,2025-11-20,CUS-023,Vihaan Singh 2,Corporate,Delhi,North,PRD-008,Storage Container Set,Home & Kitchen,2,999,0.2,Debit Card,Completed
+ORD-0299,2025-01-07,CUS-069,Rohan Das 4,Small Business,Jaipur,North,PRD-002,Bluetooth Headphones,Electronics,4,2499,0.2,Cash on Delivery,Completed
+ORD-0300,2025-06-08,CUS-078,Nisha Bansal 4,Small Business,Jaipur,North,PRD-011,Classic Wallet,Fashion,2,1199,0.2,Cash on Delivery,Completed
+ORD-0301,2025-03-12,CUS-050,Saanvi Iyer 3,Corporate,Bengaluru,South,PRD-003,USB-C Hub,Electronics,2,1899,0.2,Debit Card,Completed
+ORD-0302,2025-11-25,CUS-039,Siddharth Jain 2,Small Business,Bengaluru,South,PRD-003,USB-C Hub,Electronics,3,1899,0.15,Debit Card,Completed
+ORD-0303,2025-12-07,CUS-056,Pooja Saxena 3,Corporate,Chennai,South,PRD-009,Table Lamp,Home & Kitchen,3,1499,0.2,Cash on Delivery,Completed
+ORD-0304,2025-07-28,CUS-070,Saanvi Iyer 4,Consumer,Mumbai,West,PRD-006,Desk Organiser,Office Supplies,2,699,0.1,Net Banking,Returned
+ORD-0305,2025-10-23,CUS-013,Rahul Mishra,Consumer,Kolkata,East,PRD-012,Stainless Water Bottle,Lifestyle,2,799,0.2,Credit Card,Returned
+ORD-0306,2025-10-11,CUS-053,Rahul Mishra 3,Corporate,Hyderabad,South,PRD-001,Wireless Mouse,Electronics,4,899,0.2,Credit Card,Completed
+ORD-0307,2025-02-06,CUS-051,Aditya Joshi 3,Small Business,Pune,West,PRD-003,USB-C Hub,Electronics,2,1899,0.15,Credit Card,Completed
+ORD-0308,2025-10-06,CUS-015,Karan Malhotra,Small Business,Mumbai,West,PRD-008,Storage Container Set,Home & Kitchen,5,999,0,Debit Card,Cancelled
+ORD-0309,2025-10-08,CUS-067,Kabir Khan 4,Consumer,Chennai,South,PRD-003,USB-C Hub,Electronics,1,1899,0.2,Debit Card,Completed
+ORD-0310,2025-01-18,CUS-037,,Consumer,Lucknow,North,PRD-007,Electric Kettle,Home & Kitchen,2,1699,0.05,Net Banking,Completed
+ORD-0311,2025-05-30,CUS-011,Aditya Joshi,Corporate,Jaipur,North,PRD-007,Electric Kettle,Home & Kitchen,3,1699,0.15,UPI,Cancelled
+ORD-0312,2025-11-24,CUS-036,Pooja Saxena 2,Small Business,Jaipur,North,PRD-002,Bluetooth Headphones,Electronics,2,2499,0,Debit Card,Completed
+ORD-0313,2025-01-20,CUS-041,Aarav Sharma 3,Corporate,Chennai,South,PRD-003,USB-C Hub,Electronics,2,1899,0.05,UPI,Cancelled
+ORD-0314,2025-10-28,CUS-043,Vihaan Singh 3,Consumer,Delhi,North,PRD-012,Stainless Water Bottle,Lifestyle,4,799,0,Cash on Delivery,Completed
+ORD-0315,2025-12-14,CUS-033,Rahul Mishra 2,Small Business,Hyderabad,South,PRD-005,Executive Notebook,Office Supplies,3,349,0.1,Net Banking,Cancelled
+ORD-0316,2025-09-24,CUS-044,Ananya Gupta 3,Corporate,Lucknow,North,PRD-006,Desk Organiser,Office Supplies,3,699,0.05,UPI,Completed
+ORD-0317,2025-12-17,CUS-031,Aditya Joshi 2,Consumer,Kolkata,East,PRD-010,Travel Backpack,Fashion,3,2199,0.15,Cash on Delivery,Returned
+ORD-0318,2025-01-30,CUS-043,Vihaan Singh 3,Consumer,Kolkata,East,PRD-012,Stainless Water Bottle,Lifestyle,1,799,0.05,Debit Card,Completed
+ORD-0319,2025-07-09,CUS-038,Nisha Bansal 2,Corporate,Delhi,North,PRD-008,Storage Container Set,Home & Kitchen,1,999,0.2,upi,Returned
+ORD-0320,2025-06-28,CUS-074,Neha Rao 4,Corporate,Kolkata,East,PRD-003,USB-C Hub,Electronics,1,1899,0.05,Credit Card,Completed
+ORD-0321,2025-10-29,CUS-022,Diya Patel 2,Consumer,Kolkata,East,PRD-012,Stainless Water Bottle,Lifestyle,4,799,0.1,Net Banking,Completed
+ORD-0322,2025-11-03,CUS-064,Ananya Gupta 4,Consumer,Mumbai,West,PRD-009,Table Lamp,Home & Kitchen,2,1499,0,Credit Card,Returned
+ORD-0323,2025-04-11,CUS-052,Priya Kapoor 3,Consumer,Ahmedabad,West,PRD-001,Wireless Mouse,Electronics,4,899,0,UPI,Cancelled
+ORD-0324,2025-01-29,CUS-022,Diya Patel 2,Consumer,Bengaluru,South,PRD-011,Classic Wallet,Fashion,5,1199,0,Net Banking,Completed
+ORD-0325,2025-05-11,CUS-066,Isha Mehta 4,Small Business,Lucknow,North,PRD-007,Electric Kettle,Home & Kitchen,4,1699,0.15,Net Banking,Completed
+ORD-0326,2025-07-09,CUS-057,Vikram Yadav 3,Small Business,Hyderabad,South,PRD-005,Executive Notebook,Office Supplies,1,349,0,UPI,Completed
+ORD-0327,2025-06-01,CUS-053,Rahul Mishra 3,Corporate,Ahmedabad,West,PRD-006,Desk Organiser,Office Supplies,5,699,0.1,Cash on Delivery,Completed
+ORD-0328,2025-01-22,CUS-007,Kabir Khan,Consumer,Mumbai,West,PRD-003,USB-C Hub,Electronics,2,1899,0,Net Banking,Completed
+ORD-0329,2025-05-19,CUS-033,Rahul Mishra 2,Small Business,Delhi,North,PRD-004,Laptop Stand,Office Supplies,5,1299,0,Cash on Delivery,Completed
+ORD-0330,2025-10-27,CUS-023,Vihaan Singh 2,Corporate,Hyderabad,South,PRD-006,Desk Organiser,Office Supplies,3,699,0,Credit Card,Completed
+ORD-0331,2025-06-24,CUS-039,Siddharth Jain 2,Small Business,Lucknow,North,PRD-001,Wireless Mouse,Electronics,4,899,0.1,Cash on Delivery,Cancelled
+ORD-0332,2025-05-26,CUS-054,Neha Rao 3,Small Business,Chennai,South,PRD-011,Classic Wallet,Fashion,4,1199,0.1,Debit Card,Completed
+ORD-0333,2025-08-11,CUS-074,Neha Rao 4,Corporate,Jaipur,North,PRD-011,Classic Wallet,Fashion,4,1199,0.1,UPI,Completed
+ORD-0334,2025-12-21,CUS-050,Saanvi Iyer 3,Corporate,Delhi, north ,PRD-011,Classic Wallet,Fashion,1,1199,0.2,Debit Card,Completed
+ORD-0335,2025-05-31,CUS-075,Karan Malhotra 4,Small Business,Kolkata,East,PRD-006,Desk Organiser,Office Supplies,2,699,0.05,Cash on Delivery,Completed
+ORD-0336,2025-08-04,CUS-036,Pooja Saxena 2,Small Business,Pune,West,PRD-003,USB-C Hub,Electronics,2,1899,0,UPI,Returned
+ORD-0337,2025-01-16,CUS-064,Ananya Gupta 4,Consumer,Ahmedabad,West,PRD-008,Storage Container Set,Home & Kitchen,3,999,0.1,Debit Card,Completed
+ORD-0338,2025-02-17,CUS-061,Aarav Sharma 4,Consumer,Jaipur,North,PRD-003,USB-C Hub,Electronics,3,1899,0.15,Credit Card,Completed
+ORD-0339,2025-12-27,CUS-067,Kabir Khan 4,Consumer,Kolkata,East,PRD-004,Laptop Stand,Office Supplies,3,1299,0.2,Net Banking,Completed
+ORD-0340,2025-06-03,CUS-041,Aarav Sharma 3,Corporate,Hyderabad,South,PRD-012,Stainless Water Bottle,Lifestyle,2,799,0,Cash on Delivery,Cancelled
+ORD-0341,2025-03-30,CUS-028,Meera Nair 2,Consumer,Pune,West,PRD-003,USB-C Hub,Electronics,5,1899,0.1,Debit Card,Completed
+ORD-0342,2025-02-26,CUS-041,Aarav Sharma 3,Corporate,Chennai,South,PRD-003,USB-C Hub,Electronics,2,1899,0,UPI,Completed
+ORD-0343,2025-01-01,CUS-002,Diya Patel,Corporate,Hyderabad,South,PRD-010,Travel Backpack,Fashion,3,2199,0,Net Banking,Completed
+ORD-0344,2025-02-11,CUS-030,Saanvi Iyer 2,Small Business,Ahmedabad,West,PRD-008,Storage Container Set,Home & Kitchen,4,999,0.2,UPI,Completed
+ORD-0345,2025-04-20,CUS-048,Meera Nair 3,Small Business,Mumbai,West,PRD-008,Storage Container Set,Home & Kitchen,2,999,0,UPI,Completed
+ORD-0346,2025-07-04,CUS-029,Rohan Das 2,Corporate,Ahmedabad,West,PRD-012,Stainless Water Bottle,Lifestyle,4,799,0,Cash on Delivery,Completed
+ORD-0347,2025-09-05,CUS-019,Siddharth Jain,Consumer,Kolkata,East,PRD-012,Stainless Water Bottle,Lifestyle,1,799,0.05,Net Banking,Completed
+ORD-0348,2025-05-15,CUS-032,Priya Kapoor 2,Corporate,Pune,West,PRD-003,USB-C Hub,Electronics,3,1899,0,Net Banking,Cancelled
+ORD-0349,2025-09-12,CUS-023,Vihaan Singh 2,Corporate,Chennai,South,PRD-010,Travel Backpack,Fashion,4,2199,0,Cash on Delivery,Returned
+ORD-0350,2025-03-10,CUS-076,Pooja Saxena 4,Consumer,Mumbai,West,PRD-001,Wireless Mouse,Electronics,4,899,0.1,Debit Card,Cancelled
+ORD-0351,2025-07-07,CUS-024,Ananya Gupta 2,Small Business,Pune,West,PRD-004,Laptop Stand,Office Supplies,3,1299,0.1,Net Banking,Cancelled
+ORD-0352,2025-04-05,CUS-060,Kavya Reddy 3,Small Business,Chennai,South,PRD-002,Bluetooth Headphones,Electronics,5,2499,0.15,Cash on Delivery,Cancelled
+ORD-0353,2025-01-26,CUS-080,Kavya Reddy 4,Corporate,Pune,West,PRD-004,Laptop Stand,Office Supplies,4,1299,0.05,UPI,Completed
+ORD-0354,2025-01-31,CUS-030,Saanvi Iyer 2,Small Business,Mumbai,West,PRD-006,Desk Organiser,Office Supplies,5,699,0.1,Net Banking,Returned
+ORD-0355,2025-10-08,CUS-057,Vikram Yadav 3,Small Business,Jaipur,North,PRD-005,Executive Notebook,Office Supplies,5,349,0.1,Net Banking,Completed
+ORD-0356,2025-09-11,CUS-019,Siddharth Jain,Consumer,Lucknow,North,PRD-010,Travel Backpack,Fashion,2,2199,0.15,Debit Card,Cancelled
+ORD-0357,2025-04-24,CUS-050,Saanvi Iyer 3,Corporate,Pune,West,PRD-007,Electric Kettle,Home & Kitchen,3,1699,0.2,Debit Card,Cancelled
+ORD-0358,2025-09-22,CUS-062,Diya Patel 4,Corporate,Chennai,South,PRD-001,Wireless Mouse,Electronics,3,899,0.05,Net Banking,Completed
+ORD-0359,2025-05-05,CUS-065,Arjun Verma 4,Corporate,Delhi,North,PRD-004,Laptop Stand,Office Supplies,1,1299,0.15,UPI,Cancelled
+ORD-0360,2025-12-20,CUS-071,Aditya Joshi 4,Corporate,Delhi,North,PRD-002,Bluetooth Headphones,Electronics,2,2499,0.2,Net Banking,Completed
+ORD-0361,2025-11-07,CUS-079,Siddharth Jain 4,Consumer,Lucknow,North,PRD-007,Electric Kettle,Home & Kitchen,5,1699,0,Net Banking,Cancelled
+ORD-0362,2025-12-18,CUS-061,Aarav Sharma 4,Consumer,Delhi,North,PRD-004,Laptop Stand,Office Supplies,1,1299,0.2,Debit Card,Completed
+ORD-0363,2025-08-08,CUS-076,Pooja Saxena 4,Consumer,Kolkata,East,PRD-005,Executive Notebook,Office Supplies,1,349,0.05,Credit Card,Completed
+ORD-0364,2025-03-20,CUS-079,Siddharth Jain 4,Consumer,Chennai,South,PRD-009,Table Lamp,Home & Kitchen,5,1499,0.1,UPI,Completed
+ORD-0365,2025-03-10,CUS-065,Arjun Verma 4,Corporate,Hyderabad,South,PRD-009,Table Lamp,Home & Kitchen,3,1499,0.1,Cash on Delivery,Returned
+ORD-0366,2025-10-13,CUS-077,Vikram Yadav 4,Corporate,Chennai,South,PRD-006,Desk Organiser,Office Supplies,4,699,0,Credit Card,Completed
+ORD-0367,2025-10-31,CUS-070,Saanvi Iyer 4,Consumer,Jaipur,North,PRD-005,Executive Notebook,Office Supplies,3,349,0.05,Net Banking,Completed
+ORD-0368,2025-02-05,CUS-075,Karan Malhotra 4,Small Business,Delhi,North,PRD-001,Wireless Mouse,Electronics,3,899,0.15,Debit Card,Returned
+ORD-0369,2025-10-16,CUS-009,Rohan Das,Small Business,Ahmedabad,West,PRD-010,Travel Backpack,Fashion,2,2199,0,Cash on Delivery,Completed
+ORD-0370,2025-01-02,CUS-013,Rahul Mishra,Consumer,Mumbai,West,PRD-011,Classic Wallet,Fashion,1,1199,0.05,Credit Card,Completed
+ORD-0371,2025-07-28,CUS-045,Arjun Verma 3,Small Business,Bengaluru,South,PRD-012,Stainless Water Bottle,Lifestyle,2,799,0.05,Debit Card,Completed
+ORD-0372,2025-07-13,CUS-020,Kavya Reddy,Corporate,Chennai,South,PRD-009,Table Lamp,Home & Kitchen,3,1499,0.2,Net Banking,Completed
+ORD-0373,2025-05-24,CUS-014,Neha Rao,Corporate,Jaipur,North,PRD-008,Storage Container Set,Home & Kitchen,1,999,0.05,UPI,Completed
+ORD-0374,2025-04-28,CUS-051,Aditya Joshi 3,Small Business,Bengaluru,South,PRD-007,Electric Kettle,Home & Kitchen,5,1699,0.05,Debit Card,Completed
+ORD-0375,2025-01-22,CUS-043,Vihaan Singh 3,Consumer,Ahmedabad,West,PRD-003,USB-C Hub,Electronics,2,1899,0.05,UPI,Completed
+ORD-0376,2025-07-12,CUS-048,Meera Nair 3,Small Business,Jaipur,North,PRD-008,Storage Container Set,Home & Kitchen,4,999,0,Cash on Delivery,Completed
+ORD-0377,2025-02-13,CUS-036,Pooja Saxena 2,Small Business,Pune,West,PRD-012,Stainless Water Bottle,Lifestyle,3,799,0.15,Credit Card,Completed
+ORD-0378,2025-09-18,CUS-046,Isha Mehta 3,Consumer,Chennai,South,PRD-010,Travel Backpack,Fashion,1,2199,0.15,Credit Card,Completed
+ORD-0379,2025-04-17,CUS-073,Rahul Mishra 4,Consumer,Kolkata,East,PRD-009,Table Lamp,Home & Kitchen,3,1499,0,Net Banking,Completed
+ORD-0380,2025-07-01,CUS-013,Rahul Mishra,Consumer,Hyderabad,South,PRD-009,Table Lamp,Home & Kitchen,4,1499,0.2,UPI,Completed
+ORD-0381,2025-07-30,CUS-058,Nisha Bansal 3,Consumer,Delhi,North,PRD-006,Desk Organiser,Office Supplies,4,699,0,Net Banking,Completed
+ORD-0382,2025-02-12,CUS-047,Kabir Khan 3,Corporate,Pune,West,PRD-010,Travel Backpack,Fashion,3,2199,0,Debit Card,Completed
+ORD-0383,2025-05-04,CUS-062,Diya Patel 4,Corporate,Hyderabad,South,PRD-005,Executive Notebook,Office Supplies,2,349,0.2,Cash on Delivery,Returned
+ORD-0384,2025-05-16,CUS-019,Siddharth Jain,Consumer,Delhi,North,PRD-009,Table Lamp,Home & Kitchen,1,1499,0,Credit Card,Completed
+ORD-0385,2025-07-25,CUS-009,Rohan Das,Small Business,Bengaluru,South,PRD-011,Classic Wallet,Fashion,3,1199,0.15,Net Banking,Cancelled
+ORD-0386,2025-05-27,CUS-014,Neha Rao,Corporate,Lucknow,North,PRD-007,Electric Kettle,Home & Kitchen,4,1699,0,Credit Card,Cancelled
+ORD-0387,2025-01-14,CUS-071,Aditya Joshi 4,Corporate,Ahmedabad,West,PRD-004,Laptop Stand,Office Supplies,3,1299,0.2,Cash on Delivery,Completed
+ORD-0388,2025-03-30,CUS-022,Diya Patel 2,Consumer,Delhi,North,PRD-010,Travel Backpack,Fashion,1,2199,0.15,Cash on Delivery,Completed
+ORD-0389,2025-11-24,CUS-079,Siddharth Jain 4,Consumer,Bengaluru,South,PRD-012,Stainless Water Bottle,Lifestyle,4,799,0,Cash on Delivery,Cancelled
+ORD-0390,2025-03-06,CUS-068,Meera Nair 4,Corporate,Chennai,South,PRD-012,Stainless Water Bottle,Lifestyle,1,799,0.15,UPI,Completed
+ORD-0391,2025-04-25,CUS-036,Pooja Saxena 2,Small Business,Mumbai,West,PRD-010,Travel Backpack,Fashion,5,2199,0.1,Debit Card,Cancelled
+ORD-0392,2025-06-25,CUS-026,Isha Mehta 2,Corporate,Kolkata,East,PRD-006,Desk Organiser,Office Supplies,2,699,0.05,UPI,Cancelled
+ORD-0393,2025-07-18,CUS-045,Arjun Verma 3,Small Business,Ahmedabad,West,PRD-009,Table Lamp,Home & Kitchen,1,1499,0.05,Credit Card,Returned
+ORD-0394,2025-10-04,CUS-006,Isha Mehta,Small Business,Mumbai,West,PRD-008,Storage Container Set,Home & Kitchen,1,999,0.15,Cash on Delivery,Completed
+ORD-0395,2025-01-08,CUS-018,Nisha Bansal,Small Business,Delhi,North,PRD-009,Table Lamp,Home & Kitchen,5,1499,0,Debit Card,Completed
+ORD-0396,2025-01-20,CUS-036,Pooja Saxena 2,Small Business,Mumbai,West,PRD-004,Laptop Stand,Office Supplies,3,1299,0.15,Net Banking,Returned
+ORD-0397,2025-08-05,CUS-002,Diya Patel,Corporate,Kolkata,East,PRD-008,Storage Container Set,Home & Kitchen,5,999,0.05,Credit Card,Completed
+ORD-0398,2025-11-17,CUS-048,Meera Nair 3,Small Business,Pune,West,PRD-009,Table Lamp,Home & Kitchen,5,1499,0.05,UPI,Completed
+ORD-0399,2025-10-13,CUS-040,Kavya Reddy 2,Consumer,Lucknow,North,PRD-005,Executive Notebook,Office Supplies,5,349,0.1,UPI,Completed
+ORD-0400,2025-11-15,CUS-074,Neha Rao 4,Corporate,Hyderabad,South,PRD-001,Wireless Mouse,Electronics,5,899,0.05,Cash on Delivery,Cancelled
+ORD-0401,2025-11-25,CUS-048,Meera Nair 3,Small Business,Mumbai,West,PRD-004,Laptop Stand,Office Supplies,5,1299,0,UPI,Returned
+ORD-0402,2025-08-13,CUS-064,Ananya Gupta 4,Consumer,Bengaluru,South,PRD-008,Storage Container Set,Home & Kitchen,4,999,0.2,Credit Card,Completed
+ORD-0403,2025-01-19,CUS-004,Ananya Gupta,Consumer,Lucknow,North,PRD-006,Desk Organiser,Office Supplies,4,699,0.15,Credit Card,Completed
+ORD-0404,2025-04-08,CUS-004,Ananya Gupta,Consumer,Hyderabad,South,PRD-012,Stainless Water Bottle,Lifestyle,2,799,0,UPI,Completed
+ORD-0405,2025-04-22,CUS-069,Rohan Das 4,Small Business,Mumbai,West,PRD-007,Electric Kettle,Home & Kitchen,5,1699,,Net Banking,Completed
+ORD-0406,2025-02-23,CUS-050,Saanvi Iyer 3,Corporate,Hyderabad,South,PRD-010,Travel Backpack,Fashion,5,2199,0,Debit Card,Completed
+ORD-0407,2025-01-19,CUS-079,Siddharth Jain 4,Consumer,Pune,West,PRD-012,Stainless Water Bottle,Lifestyle,5,799,0.1,UPI,Cancelled
+ORD-0408,2025-02-20,CUS-010,Saanvi Iyer,Consumer,Bengaluru,South,PRD-004,Laptop Stand,Office Supplies,2,1299,0.05,Cash on Delivery,Completed
+ORD-0409,2025-12-15,CUS-016,Pooja Saxena,Consumer,Kolkata,East,PRD-009,Table Lamp,Home & Kitchen,2,1499,0.2,Debit Card,Returned
+ORD-0410,2025-12-24,CUS-061,Aarav Sharma 4,Consumer,Kolkata,East,PRD-005,Executive Notebook,Office Supplies,3,349,0,Net Banking,Returned
+ORD-0411,2025-01-28,CUS-007,Kabir Khan,Consumer,Ahmedabad,West,PRD-005,Executive Notebook,Office Supplies,1,349,0,Debit Card,Returned
+ORD-0412,2025-03-24,CUS-046,Isha Mehta 3,Consumer,Ahmedabad,West,PRD-008,Storage Container Set,Home & Kitchen,1,999,0.1,UPI,Completed
+ORD-0413,2025-07-17,CUS-071,Aditya Joshi 4,Corporate,Bengaluru,South,PRD-006,Desk Organiser,Office Supplies,4,699,0,Debit Card,Returned
+ORD-0414,2025-09-01,CUS-061,Aarav Sharma 4,Consumer,Delhi,North,PRD-001,Wireless Mouse,Electronics,3,899,0.2,Net Banking,Completed
+ORD-0415,2025-11-23,CUS-071,Aditya Joshi 4,Corporate,Delhi,North,PRD-003,USB-C Hub,Electronics,3,1899,0,Cash on Delivery,Returned
+ORD-0416,2025-11-07,CUS-066,Isha Mehta 4,Small Business,Jaipur,North,PRD-002,Bluetooth Headphones,Electronics,2,2499,0.05,UPI,Completed
+ORD-0417,2025-04-25,CUS-014,Neha Rao,Corporate,Bengaluru,South,PRD-004,Laptop Stand,Office Supplies,4,1299,0.1,Net Banking,Completed
+ORD-0418,2025-01-17,CUS-076,,Consumer,Bengaluru,South,PRD-003,USB-C Hub,Electronics,2,1899,0.15,UPI,Completed
+ORD-0419,2025-07-27,CUS-064,Ananya Gupta 4,Consumer,Hyderabad,South,PRD-007,Electric Kettle,Home & Kitchen,5,1699,0.15,Credit Card,Completed
+ORD-0420,2025-03-17,CUS-067,Kabir Khan 4,Consumer,Hyderabad,South,PRD-008,Storage Container Set,Home & Kitchen,1,999,0.05,Debit Card,Returned
+ORD-0421,2025-08-28,CUS-060,Kavya Reddy 3,Small Business,Jaipur,North,PRD-003,USB-C Hub,Electronics,4,1899,0.05,Cash on Delivery,Completed
+ORD-0422,2025-09-13,CUS-049,Rohan Das 3,Consumer,Chennai,South,PRD-009,Table Lamp,Home & Kitchen,5,1499,0.05,UPI,Completed
+ORD-0423,2025-07-24,CUS-017,Vikram Yadav,Corporate,Ahmedabad,West,PRD-006,Desk Organiser,Office Supplies,4,699,0.05,Net Banking,Cancelled
+ORD-0424,2025-11-05,CUS-028,Meera Nair 2,Consumer,Jaipur,North,PRD-001,Wireless Mouse,Electronics,3,899,0.05,UPI,Completed
+ORD-0425,2025-06-03,CUS-003,Vihaan Singh,Small Business,Pune,West,PRD-004,Laptop Stand,Office Supplies,3,1299,0.1,Net Banking,Returned
+ORD-0426,2025-10-23,CUS-077,Vikram Yadav 4,Corporate,Hyderabad,South,PRD-003,USB-C Hub,Electronics,4,1899,0.05,Credit Card,Completed
+ORD-0427,2025-02-18,CUS-008,Meera Nair,Corporate,Pune,West,PRD-006,Desk Organiser,Office Supplies,4,699,0,Debit Card,Returned
+ORD-0428,2025-09-15,CUS-056,Pooja Saxena 3,Corporate,Mumbai,West,PRD-003,USB-C Hub,Electronics,2,1899,0.1,UPI,Completed
+ORD-0429,2025-06-26,CUS-025,Arjun Verma 2,Consumer,Kolkata,East,PRD-011,Classic Wallet,Fashion,2,1199,0,Net Banking,Completed
+ORD-0430,2025-12-20,CUS-058,Nisha Bansal 3,Consumer,Kolkata,East,PRD-003,USB-C Hub,Electronics,5,1899,0.05,Debit Card,Completed
+ORD-0431,2025-08-31,CUS-033,Rahul Mishra 2,Small Business,Pune,West,PRD-005,Executive Notebook,Office Supplies,1,349,0.05,Net Banking,Completed
+ORD-0432,2025-03-11,CUS-032,Priya Kapoor 2,Corporate,Mumbai,West,PRD-001,Wireless Mouse,Electronics,4,899,0.05,Debit Card,Cancelled
+ORD-0433,2025-03-05,CUS-071,Aditya Joshi 4,Corporate,Jaipur,North,PRD-005,Executive Notebook,Office Supplies,4,349,0.15,Credit Card,Completed
+ORD-0434,2025-12-01,CUS-070,Saanvi Iyer 4,Consumer,Jaipur,North,PRD-005,Executive Notebook,Office Supplies,2,349,0,Credit Card,Returned
+ORD-0435,2025-03-20,CUS-054,Neha Rao 3,Small Business,Bengaluru,South,PRD-009,Table Lamp,Home & Kitchen,3,1499,0.15,Debit Card,Completed
+ORD-0436,2025-08-11,CUS-010,Saanvi Iyer,Consumer,Jaipur,North,PRD-007,Electric Kettle,Home & Kitchen,4,1699,0,Debit Card,Returned
+ORD-0437,2025-03-26,CUS-063,Vihaan Singh 4,Small Business,Delhi,North,PRD-003,USB-C Hub,Electronics,4,1899,0.15,Cash on Delivery,Completed
+ORD-0438,2025-07-30,CUS-059,Siddharth Jain 3,Corporate,Mumbai,West,PRD-007,Electric Kettle,Home & Kitchen,2,1699,0.15,Debit Card,Completed
+ORD-0439,2025-01-31,CUS-027,Kabir Khan 2,Small Business,Jaipur,North,PRD-002,Bluetooth Headphones,Electronics,4,2499,0,Cash on Delivery,Returned
+ORD-0440,2025-07-28,CUS-039,Siddharth Jain 2,Small Business,Lucknow,North,PRD-003,USB-C Hub,Electronics,1,1899,0.05,Debit Card,Completed
+ORD-0441,2025-11-30,CUS-021,Aarav Sharma 2,Small Business,Delhi,North,PRD-005,Executive Notebook,Office Supplies,1,349,0,UPI,Completed
+ORD-0442,2025-03-21,CUS-001,Aarav Sharma,Consumer,Delhi,North,PRD-009,Table Lamp,Home & Kitchen,2,1499,0,Debit Card,Completed
+ORD-0443,2025-04-22,CUS-056,Pooja Saxena 3,Corporate,Hyderabad,South,PRD-001,Wireless Mouse,Electronics,2,899,0,Cash on Delivery,Completed
+ORD-0444,2025-12-03,CUS-032,Priya Kapoor 2,Corporate,Lucknow,North,PRD-011,Classic Wallet,Fashion,2,1199,0.05,Cash on Delivery,Completed
+ORD-0445,2025-07-13,CUS-051,Aditya Joshi 3,Small Business,Bengaluru,South,PRD-001,Wireless Mouse,Electronics,2,899,0.05,Credit Card,Cancelled
+ORD-0446,2025-12-16,CUS-015,Karan Malhotra,Small Business,Bengaluru,South,PRD-003,USB-C Hub,Electronics,1,1899,0.05,UPI,Cancelled
+ORD-0447,2025-05-12,CUS-033,Rahul Mishra 2,Small Business,Ahmedabad,West,PRD-006,Desk Organiser,Office Supplies,5,699,0.05,Debit Card,Returned
+ORD-0448,2025-01-13,CUS-073,Rahul Mishra 4,Consumer,Hyderabad,South,PRD-003,USB-C Hub,Electronics,2,1899,0.05,Debit Card,Returned
+ORD-0449,2025-04-30,CUS-038,Nisha Bansal 2,Corporate,Jaipur,North,PRD-004,Laptop Stand,Office Supplies,4,1299,0,Cash on Delivery,Cancelled
+ORD-0450,2025-11-11,CUS-037,Vikram Yadav 2,Consumer,Jaipur,North,PRD-011,Classic Wallet,Fashion,3,1199,0,Cash on Delivery,Completed
+ORD-0451,2025-03-04,CUS-007,Kabir Khan,Consumer,Pune,West,PRD-007,Electric Kettle,Home & Kitchen,1,1699,0.05,UPI,Completed
+ORD-0452,2025-09-14,CUS-052,Priya Kapoor 3,Consumer,Mumbai,West,PRD-002,Bluetooth Headphones,Electronics,4,2499,0.15,Cash on Delivery,Completed
+ORD-0453,2025-07-17,CUS-030,Saanvi Iyer 2,Small Business,Hyderabad,South,PRD-006,Desk Organiser,Office Supplies,1,699,0.1,UPI,Returned
+ORD-0454,2025-01-27,CUS-073,Rahul Mishra 4,Consumer,Hyderabad,South,PRD-006,Desk Organiser,Office Supplies,1,699,0.2,UPI,Completed
+ORD-0455,2025-06-10,CUS-070,Saanvi Iyer 4,Consumer,Kolkata,East,PRD-003,USB-C Hub,Electronics,4,1899,0.15,Debit Card,Completed
+ORD-0456,2025-03-19,CUS-051,Aditya Joshi 3,Small Business,Jaipur,North,PRD-005,Executive Notebook,Office Supplies,5,349,0,Credit Card,Cancelled
+ORD-0457,2025-01-09,CUS-038,Nisha Bansal 2,Corporate,Ahmedabad,West,PRD-012,Stainless Water Bottle,Lifestyle,1,799,0.2,Debit Card,Completed
+ORD-0458,2025-07-26,CUS-014,Neha Rao,Corporate,Delhi,North,PRD-007,Electric Kettle,Home & Kitchen,1,1699,0.2,Cash on Delivery,Completed
+ORD-0459,2025-12-02,CUS-070,Saanvi Iyer 4,Consumer,Jaipur,North,PRD-006,Desk Organiser,Office Supplies,4,699,0.15,Net Banking,Completed
+ORD-0460,2025-08-26,CUS-062,Diya Patel 4,Corporate,Chennai,South,PRD-006,Desk Organiser,Office Supplies,5,699,0.15,Credit Card,Completed
+ORD-0461,2025-10-24,CUS-016,Pooja Saxena,Consumer,Chennai,South,PRD-003,USB-C Hub,Electronics,4,1899,0,UPI,Completed
+ORD-0462,2025-11-17,CUS-008,Meera Nair,Corporate,Jaipur,North,PRD-003,USB-C Hub,Electronics,5,1899,0.1,Debit Card,Completed
+ORD-0463,2025-09-20,CUS-042,Diya Patel 3,Small Business,Kolkata,East,PRD-006,Desk Organiser,Office Supplies,2,699,0.15,Net Banking,Completed
+ORD-0464,2025-11-06,CUS-024,Ananya Gupta 2,Small Business,Pune,West,PRD-005,Executive Notebook,Office Supplies,4,349,0,Net Banking,Cancelled
+ORD-0465,2025-02-14,CUS-022,Diya Patel 2,Consumer,Delhi,North,PRD-002,Bluetooth Headphones,Electronics,5,2499,0.2,UPI,Completed
+ORD-0466,2025-11-17,CUS-029,Rohan Das 2,Corporate,Jaipur,North,PRD-012,Stainless Water Bottle,Lifestyle,2,799,0,Cash on Delivery,Returned
+ORD-0467,2025-01-22,CUS-001,Aarav Sharma,Consumer,Lucknow,North,PRD-007,Electric Kettle,Home & Kitchen,5,1699,0.1,Credit Card,Cancelled
+ORD-0468,2025-05-19,CUS-064,Ananya Gupta 4,Consumer,Hyderabad,South,PRD-001,Wireless Mouse,Electronics,2,899,0,Net Banking,Completed
+ORD-0469,2025-09-08,CUS-072,Priya Kapoor 4,Small Business,Bengaluru,South,PRD-001,Wireless Mouse,Electronics,2,899,0,UPI,Completed
+ORD-0470,2025-11-22,CUS-080,Kavya Reddy 4,Corporate,Lucknow,North,PRD-012,Stainless Water Bottle,Lifestyle,1,799,0.15,Credit Card,Returned
+ORD-0471,2025-07-19,CUS-010,Saanvi Iyer,Consumer,Kolkata,East,PRD-007,Electric Kettle,Home & Kitchen,5,1699,0.1,Cash on Delivery,Completed
+ORD-0472,2025-03-22,CUS-078,Nisha Bansal 4,Small Business,Lucknow,North,PRD-007,Electric Kettle,Home & Kitchen,5,1699,0,Debit Card,Cancelled
+ORD-0473,2025-09-20,CUS-048,Meera Nair 3,Small Business,Hyderabad,South,PRD-004,Laptop Stand,Office Supplies,2,1299,0,UPI,Completed
+ORD-0474,2025-12-16,CUS-010,Saanvi Iyer,Consumer,Lucknow,North,PRD-003,USB-C Hub,Electronics,3,1899,0.2,UPI,Completed
+ORD-0475,2025-09-13,CUS-030,Saanvi Iyer 2,Small Business,Hyderabad,South,PRD-008,Storage Container Set,Home & Kitchen,1,999,0,Net Banking,Completed
+ORD-0476,2025-06-10,CUS-066,Isha Mehta 4,Small Business,Delhi,North,PRD-010,Travel Backpack,Fashion,3,2199,0.05,Cash on Delivery,Completed
+ORD-0477,2025-11-25,CUS-077,Vikram Yadav 4,Corporate,Bengaluru,South,PRD-001,Wireless Mouse,Electronics,1,899,0.2,Cash on Delivery,Completed
+ORD-0478,2025-05-09,CUS-005,Arjun Verma,Corporate,Delhi,North,PRD-006,Desk Organiser,Office Supplies,1,699,0,Credit Card,Returned
+ORD-0479,2025-11-10,CUS-030,Saanvi Iyer 2,Small Business,Bengaluru,South,PRD-008,Storage Container Set,Home & Kitchen,3,999,0.15,Debit Card,Cancelled
+ORD-0480,2025-12-16,CUS-039,Siddharth Jain 2,Small Business,Pune,West,PRD-004,Laptop Stand,Office Supplies,3,1299,0.15,Cash on Delivery,Completed
+ORD-0481,2025-10-19,CUS-018,Nisha Bansal,Small Business,Chennai,South,PRD-009,Table Lamp,Home & Kitchen,3,1499,0.2,Net Banking,Cancelled
+ORD-0482,2025-04-30,CUS-030,Saanvi Iyer 2,Small Business,Lucknow,North,PRD-008,Storage Container Set,Home & Kitchen,3,999,0,Cash on Delivery,Cancelled
+ORD-0483,2025-10-29,CUS-048,Meera Nair 3,Small Business,Kolkata,East,PRD-006,Desk Organiser,Office Supplies,5,699,0.05,Debit Card,Cancelled
+ORD-0484,2025-11-20,CUS-020,Kavya Reddy,Corporate,Lucknow,North,PRD-004,Laptop Stand,Office Supplies,2,1299,0,Cash on Delivery,Cancelled
+ORD-0485,2025-03-18,CUS-009,Rohan Das,Small Business,Lucknow,North,PRD-006,Desk Organiser,Office Supplies,2,699,0.1,Net Banking,Completed
+ORD-0486,2025-09-24,CUS-031,Aditya Joshi 2,Consumer,Kolkata,East,PRD-003,USB-C Hub,Electronics,4,1899,0.1,Debit Card,Completed
+ORD-0487,2025-02-14,CUS-026,Isha Mehta 2,Corporate,Bengaluru,South,PRD-002,Bluetooth Headphones,Electronics,5,2499,0.1,Cash on Delivery,Returned
+ORD-0488,2025-07-11,CUS-030,Saanvi Iyer 2,Small Business,Delhi,North,PRD-003,USB-C Hub,Electronics,3,1899,0,Net Banking,Completed
+ORD-0489,2025-07-14,CUS-022,Diya Patel 2,Consumer,Kolkata,East,PRD-004,Laptop Stand,Office Supplies,1,1299,0.1,Cash on Delivery,Completed
+ORD-0490,2025-04-12,CUS-046,Isha Mehta 3,Consumer,Chennai,South,PRD-002,Bluetooth Headphones,Electronics,3,2499,0.15,Cash on Delivery,Completed
+ORD-0491,2025-05-02,CUS-057,Vikram Yadav 3,Small Business,Pune,West,PRD-004,Laptop Stand,Office Supplies,2,1299,0.2,Credit Card,Completed
+ORD-0492,2025-02-03,CUS-069,Rohan Das 4,Small Business,Hyderabad,South,PRD-007,Electric Kettle,Home & Kitchen,3,1699,0.05,Cash on Delivery,Completed
+ORD-0493,2025-11-19,CUS-032,Priya Kapoor 2,Corporate,Chennai,South,PRD-010,Travel Backpack,Fashion,3,2199,0.2,Debit Card,Completed
+ORD-0494,2025-08-02,CUS-007,Kabir Khan,Consumer,Delhi,North,PRD-012,Stainless Water Bottle,Lifestyle,5,799,0,Credit Card,Completed
+ORD-0495,2025-09-09,CUS-023,Vihaan Singh 2,Corporate,Jaipur,North,PRD-007,Electric Kettle,Home & Kitchen,1,1699,0,UPI,Completed
+ORD-0496,2025-02-25,CUS-060,Kavya Reddy 3,Small Business,Delhi,North,PRD-001,Wireless Mouse,Electronics,1,899,0.2,Net Banking,Returned
+ORD-0497,2025-02-10,CUS-005,Arjun Verma,Corporate,Chennai,South,PRD-004,Laptop Stand,Office Supplies,3,1299,0.15,UPI,Returned
+ORD-0498,2025-06-27,CUS-027,Kabir Khan 2,Small Business,Bengaluru,South,PRD-006,Desk Organiser,Office Supplies,3,699,0.15,UPI,Returned
+ORD-0499,2025-09-01,CUS-079,Siddharth Jain 4,Consumer,Kolkata,East,PRD-006,Desk Organiser,Office Supplies,2,699,0.05,UPI,Returned
+ORD-0500,2025-07-23,CUS-039,Siddharth Jain 2,Small Business,Pune,West,PRD-004,Laptop Stand,Office Supplies,3,1299,0,Debit Card,Returned
+ORD-0013,2025-10-09,CUS-038,Nisha Bansal 2,Corporate,Ahmedabad,West,PRD-007,Electric Kettle,Home & Kitchen,5,1699,0.05,Cash on Delivery,Completed
+ORD-0075,2025-09-27,CUS-034,Neha Rao 2,Consumer,Jaipur,North,PRD-010,Travel Backpack,Fashion,5,2199,0,UPI,Completed
+ORD-0156,2025-07-21,CUS-021,Aarav Sharma 2,Small Business,Kolkata,East,PRD-004,Laptop Stand,Office Supplies,2,1299,0,Debit Card,Completed
+ORD-0245,2025-12-12,CUS-020,Kavya Reddy,Corporate,Chennai,South,PRD-012,Stainless Water Bottle,Lifestyle,5,799,0.05,UPI,Completed
+ORD-0368,2025-02-05,CUS-075,Karan Malhotra 4,Small Business,Delhi,North,PRD-001,Wireless Mouse,Electronics,3,899,0.15,Debit Card,Returned
+ORD-0452,2025-09-14,CUS-052,Priya Kapoor 3,Consumer,Mumbai,West,PRD-002,Bluetooth Headphones,Electronics,4,2499,0.15,Cash on Delivery,Completed
