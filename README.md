@@ -18,7 +18,7 @@ This repository contains the assignments completed during the Bluestock FinTech 
 | 1 | Data Visualization | Interactive business performance dashboard | Completed |
 | 2 | Stock Market Fundamentals | One-page summary and TCS financial statement analysis | Completed |
 | 2 | REST APIs and JSON | Exchange-rate API extraction, JSON validation and CSV conversion | Completed |
-| 2 | Git and GitHub | Organized repository with version history | In progress |
+| 2 | Git and GitHub | Organized repository with version history | Completed |
 
 ## Folder structure
 
