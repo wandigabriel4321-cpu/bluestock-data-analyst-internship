@@ -1,0 +1,11 @@
+Student: Efigénia Wandi Filipe Gabriel
+Programme: Data Analyst Internship (FinTech)
+Week: 2
+Task 3: Git and GitHub
+
+GitHub repository:
+https://github.com/wandigabriel4321-cpu/bluestock-data-analyst-internship
+
+Primary branch: main
+
+This repository contains the internship assignments, documentation and version history created during Weeks 1 and 2.
