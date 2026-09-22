@@ -1,0 +1,22 @@
+# Dependencies from the official project technical specification.
+# Compatible-release pins keep each dependency within its selected minor line.
+pandas~=2.2.0
+numpy~=1.26.0
+openpyxl~=3.1.0
+requests~=2.32.0
+scipy~=1.12.0
+scikit-learn~=1.4.0
+matplotlib~=3.8.0
+plotly~=5.18.0
+streamlit~=1.30.0
+fastapi~=0.110.0
+uvicorn~=0.27.0
+reportlab~=4.1.0
+nltk~=3.8.0
+pytest~=8.0.0
+jupyterlab~=4.1.0
+black~=24.4.0
+ruff~=0.4.0
+pre-commit~=3.7.0
+python-dotenv~=1.0.0
+PyYAML~=6.0.0
