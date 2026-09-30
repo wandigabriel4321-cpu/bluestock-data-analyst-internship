@@ -140,3 +140,146 @@ comparisons, zero mismatches, zero foreign-key violations, ten successful SQL
 queries and 49 passing automated tests. Three companies require limited-history
 handling under DQ-16: `ATGL`, `JIOFIN` and `SBIN`. Full evidence appears in
 `docs/day21_final_validation_report.md`.
+
+## Sprint 2 — financial ratio engine
+
+Day 08 adds `src/analytics/ratios.py` with guarded calculations for Net Profit
+Margin, Operating Profit Margin, ROE, ROCE and ROA. The OPM cross-check records
+differences greater than one percentage point, while Financials-sector
+membership is read from the official `sectors` table for later sector-relative
+rules.
+
+`db/schema.sql` now includes the Sprint 2 `financial_ratios` table with a unique
+company-year key and the explicitly required downstream KPI fields. Run the
+Day 08 test module with:
+
+```bash
+make test-profitability PYTHON=.venv/bin/python
+```
+
+The verified 23 September 2026 execution passed all 12 profitability tests and
+the complete 62-test regression suite. See
+`docs/day23_sprint2_foundation.md` for formulas, schema decisions and audit
+results.
+
+Day 09 adds Debt-to-Equity, dynamic Financials-sector high-leverage
+suppression, Interest Coverage assessment, Net Debt and Asset Turnover. The
+verified 24 September 2026 execution passed all 16 new leverage and efficiency
+tests and the complete 78-test regression suite. See
+`docs/day24_sprint2_leverage_efficiency.md` for edge-case decisions and the
+real-data audit.
+
+Day 10 adds the CAGR engine for Revenue, PAT and EPS over exact 3-, 5- and
+10-year reporting windows. Negative transitions, zero bases and incomplete
+histories receive separate flags instead of invalid calculations. Run its tests
+and real-data audit with:
+
+```bash
+make test-cagr PYTHON=.venv/bin/python
+make cagr-audit PYTHON=.venv/bin/python
+```
+
+The verified 25 September 2026 execution passed all 16 new CAGR tests and the
+complete 94-test regression suite. The real-data audit covered 1,073 P&L rows
+and all 92 companies. See `docs/day25_sprint2_cagr_engine.md` for formulas,
+edge-case decisions and per-window results.
+
+Day 11 adds Free Cash Flow, annual and five-year CFO/PAT analysis, CFO Quality,
+CapEx Intensity, FCF Conversion and the exhaustive CFO/CFI/CFF capital-
+allocation matrix. Run the focused tests and regenerate the required CSV with:
+
+```bash
+make test-cashflow PYTHON=.venv/bin/python
+make cashflow-audit PYTHON=.venv/bin/python
+```
+
+The verified 26 September 2026 execution passed all 16 new cash-flow tests and
+the complete 110-test regression suite. `output/capital_allocation.csv`
+contains 1,054 eligible annual rows, all six required columns and zero blank
+pattern labels. See `docs/day26_sprint2_cashflow_kpis.md` for formulas,
+classification decisions and the real-data distribution.
+
+Day 12 adds `src/analytics/ratio_engine.py`, the idempotent orchestrator that
+builds the company-year universe from the union of P&L, Balance Sheet and Cash
+Flow keys, calculates the complete Sprint 2 KPI set and atomically replaces the
+SQLite `financial_ratios` table. It also verifies required-column coverage,
+compares every available value with the official pre-computed workbook and
+records all permitted edge cases.
+
+Run the complete Day 12 load with:
+
+```bash
+make ratio-engine PYTHON=.venv/bin/python
+```
+
+The verified 27 September 2026 execution produced 1,155 unique company-year
+rows for all 92 companies, zero foreign-key violations and no completely empty
+required KPI column. The output audit files are:
+
+- `output/ratio_engine_load_audit.csv`;
+- `output/financial_ratios_null_audit.csv`;
+- `output/financial_ratios_reference_comparison.csv`;
+- `output/financial_ratios_comparison_summary.json`;
+- `output/ratio_edge_cases.log`.
+
+Run the focused Day 12 tests with:
+
+```bash
+make test-ratio-engine PYTHON=.venv/bin/python
+```
+
+See `docs/day27_ratio_engine_load.md` for formulas, comparison policy and exit
+gate evidence.
+
+Day 13 formalises the Financials-sector carve-out. Banks, NBFCs and insurers
+are identified from `sectors.broad_sector` and `sectors.sub_sector`, and the
+ordinary D/E greater-than-five warning is not applied to them. ROCE remains
+calculated for transparency but is interpreted against the relevant financial
+entity group instead of an industrial-company absolute threshold.
+
+The review compares the latest calculable ROCE and ROE with the company-level
+reference fields, records differences above five percentage points and assigns
+one of the required audit explanations: source problem, version difference,
+formula difference or insufficient history.
+
+Run the integrated Day 13 review with:
+
+```bash
+make sector-review PYTHON=.venv/bin/python
+make test-sector-review PYTHON=.venv/bin/python
+```
+
+The verified 28 September 2026 execution reviewed all 23 companies currently
+classified as Financials, produced 46 ROCE/ROE comparisons and appended 18
+material or insufficient-history findings to `output/ratio_edge_cases.log`.
+The task's count of 19 is treated as a source-version difference because the
+supplied `sectors.xlsx`, processed extract and SQLite database all contain 23,
+while no historical 19-company membership list was supplied. Full evidence is
+in `docs/day28_financials_roce_review.md` and
+`output/sector_roce_notes.csv`.
+
+Day 14 adds `src/analytics/sprint2_review.py`, which independently recalculates
+ROE and five-year Revenue CAGR from the original workbooks for a reproducible
+five-company sample. It also audits every explanation in
+`output/ratio_edge_cases.log` and runs the preliminary screen using the latest
+calculable ROE greater than 15% and Debt-to-Equity below 1.
+
+Run the complete Sprint 2 exit review with:
+
+```bash
+make sprint2-final-check PYTHON=.venv/bin/python
+```
+
+The verified 29 September 2026 execution produced 1,155 ratio rows for all 92
+companies, zero foreign-key violations, 6,993 explained edge cases and 38
+screener companies. All five manual ROE and Revenue CAGR checks matched the
+database with a 0.00 percentage-point difference. The complete regression
+suite passed 140 tests, including 60 dedicated formula tests and 90 Sprint 2
+tests. See `docs/day29_sprint2_final_review.md`,
+`docs/sprint2_technical_documentation.md` and `docs/sprint2_retro.md`.
+
+The 30 September 2026 release check repeated the complete engine and all tests,
+confirmed non-empty mandatory-column coverage and re-audited the public package
+for confidential files. The release remained at 1,155 rows, 92 companies and
+140 passing tests. See `docs/day30_release_and_submission_check.md` and
+`output/sprint2_validation_report.csv`.
