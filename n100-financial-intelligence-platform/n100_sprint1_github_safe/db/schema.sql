@@ -141,6 +141,112 @@ CREATE TABLE IF NOT EXISTS stock_prices (
         ON UPDATE CASCADE ON DELETE RESTRICT
 );
 
+-- Sprint 2 analytical output, finalised on Day 12.  The authoritative grain is
+-- one row per key in the UNION of P&L, Balance Sheet and Cash Flow company-year
+-- combinations.  Nullable KPI values represent documented source/denominator
+-- edge cases, never fabricated zeroes.
+CREATE TABLE IF NOT EXISTS financial_ratios (
+    id INTEGER PRIMARY KEY,
+    company_id TEXT NOT NULL,
+    year TEXT NOT NULL CHECK (year GLOB '[0-9][0-9][0-9][0-9]-[0-9][0-9]'),
+    broad_sector TEXT,
+    is_financials INTEGER NOT NULL DEFAULT 0 CHECK (is_financials IN (0, 1)),
+    net_profit_margin_pct REAL,
+    operating_profit_margin_pct REAL,
+    opm_source_pct REAL,
+    opm_difference_pct_points REAL,
+    opm_mismatch_flag INTEGER NOT NULL DEFAULT 0
+        CHECK (opm_mismatch_flag IN (0, 1)),
+    return_on_equity_pct REAL,
+    return_on_capital_employed_pct REAL,
+    return_on_assets_pct REAL,
+    debt_to_equity REAL,
+    high_leverage_flag INTEGER CHECK (high_leverage_flag IN (0, 1)),
+    interest_coverage REAL,
+    icr_label TEXT,
+    icr_warning_flag INTEGER CHECK (icr_warning_flag IN (0, 1)),
+    net_debt_cr REAL,
+    asset_turnover REAL,
+    free_cash_flow_cr REAL,
+    capex_cr REAL,
+    capex_intensity_pct REAL,
+    capex_intensity_label TEXT,
+    earnings_per_share REAL,
+    book_value_per_share REAL,
+    dividend_payout_ratio_pct REAL,
+    total_debt_cr REAL,
+    cash_from_operations_cr REAL,
+    -- CAGR flags are stored separately from values. Supported states are:
+    -- OK, DECLINE_TO_LOSS, TURNAROUND, BOTH_NEGATIVE, ZERO_BASE, INSUFFICIENT.
+    revenue_cagr_3yr REAL,
+    revenue_cagr_3yr_flag TEXT,
+    revenue_cagr_5yr REAL,
+    revenue_cagr_5yr_flag TEXT,
+    revenue_cagr_10yr REAL,
+    revenue_cagr_10yr_flag TEXT,
+    pat_cagr_3yr REAL,
+    pat_cagr_3yr_flag TEXT,
+    pat_cagr_5yr REAL,
+    pat_cagr_5yr_flag TEXT,
+    pat_cagr_10yr REAL,
+    pat_cagr_10yr_flag TEXT,
+    eps_cagr_3yr REAL,
+    eps_cagr_3yr_flag TEXT,
+    eps_cagr_5yr REAL,
+    eps_cagr_5yr_flag TEXT,
+    eps_cagr_10yr REAL,
+    eps_cagr_10yr_flag TEXT,
+    cfo_pat_ratio_5yr REAL,
+    cfo_quality_label TEXT,
+    fcf_conversion_rate_pct REAL,
+    composite_quality_score REAL,
+    UNIQUE (company_id, year),
+    FOREIGN KEY (company_id) REFERENCES companies(id)
+        ON UPDATE CASCADE ON DELETE RESTRICT
+);
+
+-- Sprint 3 Day 18 peer-group membership.  The source workbook defines one
+-- official benchmark per group.  Keeping that flag in SQLite preserves the
+-- source designation instead of trying to infer a benchmark from KPI values.
+CREATE TABLE IF NOT EXISTS peer_group_assignments (
+    company_id TEXT PRIMARY KEY,
+    peer_group_name TEXT NOT NULL CHECK (length(trim(peer_group_name)) > 0),
+    is_benchmark INTEGER NOT NULL CHECK (is_benchmark IN (0, 1)),
+    UNIQUE (company_id, peer_group_name),
+    FOREIGN KEY (company_id) REFERENCES companies(id)
+        ON UPDATE CASCADE ON DELETE RESTRICT
+);
+
+-- Long-form percentile output at company/group/metric/year grain.  Missing
+-- values are deliberately retained with a NULL percentile_rank, while being
+-- excluded from the distribution used to rank the available observations.
+CREATE TABLE IF NOT EXISTS peer_percentiles (
+    company_id TEXT NOT NULL,
+    peer_group_name TEXT NOT NULL,
+    metric TEXT NOT NULL CHECK (metric IN (
+        'return_on_equity_pct',
+        'return_on_capital_employed_pct',
+        'net_profit_margin_pct',
+        'debt_to_equity',
+        'free_cash_flow_cr',
+        'pat_cagr_5yr',
+        'revenue_cagr_5yr',
+        'eps_cagr_5yr',
+        'interest_coverage',
+        'asset_turnover'
+    )),
+    value REAL,
+    percentile_rank REAL CHECK (
+        percentile_rank IS NULL OR
+        (percentile_rank >= 0.0 AND percentile_rank <= 100.0)
+    ),
+    year TEXT NOT NULL CHECK (year GLOB '[0-9][0-9][0-9][0-9]-[0-9][0-9]'),
+    PRIMARY KEY (company_id, peer_group_name, metric, year),
+    FOREIGN KEY (company_id, peer_group_name)
+        REFERENCES peer_group_assignments(company_id, peer_group_name)
+        ON UPDATE CASCADE ON DELETE RESTRICT
+);
+
 CREATE INDEX IF NOT EXISTS idx_profitandloss_year
     ON profitandloss(year);
 CREATE INDEX IF NOT EXISTS idx_balancesheet_year
@@ -153,3 +259,11 @@ CREATE INDEX IF NOT EXISTS idx_market_cap_year
     ON market_cap(year);
 CREATE INDEX IF NOT EXISTS idx_stock_prices_company_date
     ON stock_prices(company_id, date);
+CREATE INDEX IF NOT EXISTS idx_financial_ratios_year
+    ON financial_ratios(year);
+CREATE INDEX IF NOT EXISTS idx_financial_ratios_sector_year
+    ON financial_ratios(broad_sector, year);
+CREATE INDEX IF NOT EXISTS idx_peer_group_assignments_group
+    ON peer_group_assignments(peer_group_name);
+CREATE INDEX IF NOT EXISTS idx_peer_percentiles_group_metric_year
+    ON peer_percentiles(peer_group_name, metric, year);

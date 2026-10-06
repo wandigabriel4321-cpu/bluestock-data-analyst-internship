@@ -1,0 +1,18 @@
+N100 Sprint 3 — Day 20 download and storage guide
+
+1. Download N100_Day20_peer_comparison.xlsx first. This is the principal
+   deliverable and can be opened directly in Microsoft Excel or LibreOffice.
+
+2. Download N100_Sprint3_Day20_Deliverables_Efigenia_Gabriel.zip. It contains
+   the workbook, audit, technical report, test evidence, generator and tests.
+
+3. Download N100_Sprint3_Day20_Checkpoint_Efigenia_Gabriel.zip and keep it on
+   the laptop or Google Drive. This is the recoverable project checkpoint with
+   the database and supporting data needed to continue Day 21.
+
+4. Use N100_Sprint3_Day20_GitHub_Safe_Efigenia_Gabriel.zip only for the public
+   GitHub update. It excludes raw/processed/supporting data, generated SQLite
+   databases, backups and output files.
+
+5. After downloading, compare the file sizes with N100_Day20_SHA256SUMS.txt.
+   If a ZIP does not open, delete only that local copy and download it again.

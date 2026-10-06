@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.ruff_cache/
+.mypy_cache/
+
+# Virtual environments and local configuration
+.venv/
+.env
+
+# Confidential source data and generated databases
+data/raw/*
+!data/raw/.gitkeep
+data/supporting/*
+!data/supporting/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+db/*.db
+db/*.sqlite
+db/*.sqlite3
+db/backups/
+output/*
+!output/.gitkeep
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,112 @@
+version: 1
+
+# Analysts may edit this mapping or pass --filter metric=value on the command
+# line. Empty active_filters returns the complete latest 92-company universe.
+active_filters: {}
+
+metrics:
+  roe_min:
+    label: ROE minimum (%)
+    column: return_on_equity_pct
+    direction: min
+  de_max:
+    label: Debt-to-Equity maximum
+    column: debt_to_equity
+    direction: max
+    financials_exempt: true
+  fcf_min:
+    label: Free Cash Flow minimum (crore)
+    column: free_cash_flow_cr
+    direction: min
+  revenue_cagr_5yr_min:
+    label: Revenue CAGR 5yr minimum (%)
+    column: revenue_cagr_5yr
+    direction: min
+  pat_cagr_5yr_min:
+    label: PAT CAGR 5yr minimum (%)
+    column: pat_cagr_5yr
+    direction: min
+  opm_min:
+    label: Operating Profit Margin minimum (%)
+    column: operating_profit_margin_pct
+    direction: min
+  pe_max:
+    label: P/E maximum
+    column: pe_ratio
+    direction: max
+  pb_max:
+    label: P/B maximum
+    column: pb_ratio
+    direction: max
+  dividend_yield_min:
+    label: Dividend Yield minimum (%)
+    column: dividend_yield_pct
+    direction: min
+  interest_coverage_min:
+    label: Interest Coverage minimum
+    column: interest_coverage
+    direction: min
+    debt_free_as_infinity: true
+  market_cap_min:
+    label: Market Capitalisation minimum (crore)
+    column: market_cap_crore
+    direction: min
+  net_profit_min:
+    label: Net Profit minimum (crore)
+    column: net_profit
+    direction: min
+  eps_cagr_5yr_min:
+    label: EPS CAGR 5yr minimum (%)
+    column: eps_cagr_5yr
+    direction: min
+  asset_turnover_min:
+    label: Asset Turnover minimum
+    column: asset_turnover
+    direction: min
+  sales_min:
+    label: Sales minimum (crore)
+    column: sales
+    direction: min
+
+presets:
+  quality_compounder:
+    label: Quality Compounder
+    rules:
+      - {label: "ROE > 15%", column: return_on_equity_pct, operator: gt, threshold: 15}
+      - {label: "D/E < 1", column: debt_to_equity, operator: lt, threshold: 1, financials_exempt: true}
+      - {label: "FCF > 0", column: free_cash_flow_cr, operator: gt, threshold: 0}
+      - {label: "Revenue CAGR 5yr > 10%", column: revenue_cagr_5yr, operator: gt, threshold: 10}
+  value_pick:
+    label: Value Pick
+    rules:
+      - {label: "P/E < 20", column: pe_ratio, operator: lt, threshold: 20}
+      - {label: "P/B < 3", column: pb_ratio, operator: lt, threshold: 3}
+      - {label: "D/E < 2", column: debt_to_equity, operator: lt, threshold: 2, financials_exempt: true}
+      - {label: "Dividend Yield > 1%", column: dividend_yield_pct, operator: gt, threshold: 1}
+  growth_accelerator:
+    label: Growth Accelerator
+    rules:
+      - {label: "PAT CAGR 5yr > 20%", column: pat_cagr_5yr, operator: gt, threshold: 20}
+      - {label: "Revenue CAGR 5yr > 15%", column: revenue_cagr_5yr, operator: gt, threshold: 15}
+      - {label: "D/E < 2", column: debt_to_equity, operator: lt, threshold: 2, financials_exempt: true}
+  dividend_champion:
+    label: Dividend Champion
+    rules:
+      - {label: "Dividend Yield > 2%", column: dividend_yield_pct, operator: gt, threshold: 2}
+      - {label: "Dividend Payout < 80%", column: dividend_payout_ratio_pct, operator: lt, threshold: 80}
+      - {label: "FCF > 0", column: free_cash_flow_cr, operator: gt, threshold: 0}
+  debt_free_blue_chip:
+    label: Debt-Free Blue Chip
+    rules:
+      - {label: "D/E = 0", column: debt_to_equity, operator: eq, threshold: 0}
+      - {label: "ROE > 12%", column: return_on_equity_pct, operator: gt, threshold: 12}
+      - {label: "Revenue > INR 5,000 crore", column: sales, operator: gt, threshold: 5000}
+  turnaround_watch:
+    label: Turnaround Watch
+    rules:
+      - {label: "Revenue CAGR 3yr > 10%", column: revenue_cagr_3yr, operator: gt, threshold: 10}
+      - {label: "Latest-year FCF > 0", column: free_cash_flow_cr, operator: gt, threshold: 0}
+      - {label: "D/E declining year-over-year", special: debt_to_equity_declining}
+
+output:
+  csv_path: output/day15_custom_screener.csv

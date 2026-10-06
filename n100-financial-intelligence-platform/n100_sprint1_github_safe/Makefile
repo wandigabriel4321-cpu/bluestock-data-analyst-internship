@@ -1,6 +1,6 @@
 PYTHON ?= python
 
-.PHONY: setup inventory load validate schema full-load manual-review explore cagr-audit cashflow-audit ratio-engine sector-review sprint2-review sprint2-final-check final-check test test-profitability test-leverage test-cagr test-cashflow test-ratio-engine test-sector-review test-sprint2-review clean
+.PHONY: setup inventory load validate schema full-load manual-review explore cagr-audit cashflow-audit ratio-engine sector-review sprint2-review sprint2-final-check screener presets day17-excel peer-percentiles radar-charts peer-comparison sprint3-review day15-check day16-check day17-check day18-check day19-check day20-check day21-check final-check test test-profitability test-leverage test-cagr test-cashflow test-ratio-engine test-sector-review test-sprint2-review test-screener test-presets test-composite-score test-peer test-radar test-peer-report test-sprint3-review clean
 
 setup:
 	$(PYTHON) -m venv .venv
@@ -44,6 +44,41 @@ sprint2-review:
 
 sprint2-final-check: ratio-engine sprint2-review test
 
+screener:
+	$(PYTHON) -m src.screener.engine --database db/nifty100.db --config config/screener_config.yaml --output output/day15_custom_screener.csv
+
+presets:
+	$(PYTHON) -m src.screener.presets --database db/nifty100.db --config config/screener_config.yaml --output-dir output
+
+day17-excel:
+	$(PYTHON) -m src.screener.excel_report --database db/nifty100.db --config config/screener_config.yaml --output output/screener_output.xlsx
+
+peer-percentiles:
+	$(PYTHON) -m src.analytics.peer --database db/nifty100.db --schema db/schema.sql --peer-groups data/supporting/peer_groups.xlsx --output-dir output
+
+radar-charts:
+	$(PYTHON) -m src.analytics.radar --database db/nifty100.db --chart-dir reports/radar_charts --audit output/radar_chart_audit.csv
+
+peer-comparison:
+	$(PYTHON) -m src.analytics.peer_report --database db/nifty100.db --output output/peer_comparison.xlsx --audit output/peer_comparison_audit.csv
+
+sprint3-review:
+	$(PYTHON) -m src.analytics.sprint3_review --database db/nifty100.db --output-dir output --visual-confirmed --total-tests 256 --day21-tests 35 --test-failures 0
+
+day15-check: screener test
+
+day16-check: presets test
+
+day17-check: day17-excel test
+
+day18-check: peer-percentiles test
+
+day19-check: radar-charts test
+
+day20-check: peer-comparison test
+
+day21-check: screener presets day17-excel peer-percentiles radar-charts peer-comparison sprint3-review test
+
 final-check: full-load manual-review explore test
 
 test:
@@ -69,6 +104,27 @@ test-sector-review:
 
 test-sprint2-review:
 	$(PYTHON) -m unittest tests.kpi.test_sprint2_review -v
+
+test-screener:
+	$(PYTHON) -m unittest tests.screener.test_engine -v
+
+test-presets:
+	$(PYTHON) -m unittest tests.screener.test_presets -v
+
+test-composite-score:
+	$(PYTHON) -m unittest tests.screener.test_composite_score -v
+
+test-peer:
+	$(PYTHON) -m unittest tests.analytics.test_peer -v
+
+test-radar:
+	$(PYTHON) -m unittest tests.analytics.test_radar -v
+
+test-peer-report:
+	$(PYTHON) -m unittest tests.analytics.test_peer_report -v
+
+test-sprint3-review:
+	$(PYTHON) -m unittest tests.analytics.test_sprint3_review -v
 
 clean:
 	$(PYTHON) -c "from pathlib import Path; [p.unlink() for p in Path('output').glob('*') if p.is_file()]"

@@ -283,3 +283,193 @@ confirmed non-empty mandatory-column coverage and re-audited the public package
 for confidential files. The release remained at 1,155 rows, 92 companies and
 140 passing tests. See `docs/day30_release_and_submission_check.md` and
 `output/sprint2_validation_report.csv`.
+
+## Sprint 3 — configurable screener
+
+Day 15 adds `src/screener/engine.py` and the analyst-editable
+`config/screener_config.yaml`. The engine builds one current row for every
+company by combining `financial_ratios`, `market_cap`, `profitandloss`,
+`companies` and `sectors`, then applies any combination of 15 supported
+threshold filters.
+
+The financial snapshot uses the latest substantive ratio row, so an interim
+balance-sheet-only period cannot replace the latest row containing operating,
+cash-flow, growth or efficiency metrics. Market-cap and P&L inputs retain their
+own latest available periods. Missing values remain null and fail only filters
+that require the missing metric.
+
+Two documented business rules are built in:
+
+- companies in the `Financials` broad sector are exempt from the ordinary D/E
+  maximum filter;
+- `icr_label = "Debt Free"` is treated as infinite Interest Coverage.
+
+Run the configured screen with:
+
+```bash
+make screener PYTHON=.venv/bin/python
+```
+
+Override the YAML thresholds from the command line when required:
+
+```bash
+python -m src.screener.engine --filter roe_min=15 --filter de_max=1
+```
+
+Run the focused Day 15 tests or the complete regression gate with:
+
+```bash
+make test-screener PYTHON=.venv/bin/python
+make day15-check PYTHON=.venv/bin/python
+```
+
+The empty default `active_filters` mapping deliberately returns the complete
+92-company universe to `output/day15_custom_screener.csv`; analysts can add
+thresholds without changing Python code. Technical decisions and validation
+evidence are recorded in `docs/day15_sprint3_filter_engine.md`.
+
+## Sprint 3 — six official preset screeners
+
+Day 16 adds `src/screener/presets.py` and six immutable preset definitions to
+`config/screener_config.yaml`. Run the presets and their focused tests with:
+
+```bash
+make presets PYTHON=.venv/bin/python
+make test-presets PYTHON=.venv/bin/python
+make day16-check PYTHON=.venv/bin/python
+```
+
+The execution writes `preset_screener_results.csv`,
+`preset_validation_report.csv`, `preset_diagnostics.csv` and
+`preset_manual_checks.csv` to `output/`. The official strict inequalities are
+preserved even when a result count falls outside the expected 5--50 interval.
+See `docs/day16_sprint3_preset_screeners.md` for the count-gate investigation
+and validation evidence.
+
+## Sprint 3 — composite score and Excel screener
+
+Day 17 adds `src/screener/composite_score.py` and
+`src/screener/excel_report.py`. The new score is separate from the Sprint 2
+legacy score and follows the official 35% Profitability, 30% Cash Quality, 20%
+Growth and 15% Leverage formula. Every continuous component is winsorised at
+P10/P90 and scaled to 0--100; D/E is inverted.
+
+Generate and validate the six-sheet workbook with:
+
+```bash
+make day17-excel PYTHON=.venv/bin/python
+make test-composite-score PYTHON=.venv/bin/python
+make day17-check PYTHON=.venv/bin/python
+```
+
+The principal deliverable is `output/screener_output.xlsx`. Supporting audit
+files record component coverage, normalisation bounds and workbook validation.
+See `docs/day17_sprint3_composite_excel.md` for the formula, missing-value
+policy and evidence.
+
+## Sprint 3 — peer percentile rankings
+
+Day 18 adds `src/analytics/peer.py` and the SQLite tables
+`peer_group_assignments` and `peer_percentiles`. Membership and benchmark
+flags come exclusively from the supplied `peer_groups.xlsx` workbook.
+Percentiles are calculated on a 0--100 scale within each peer group, metric
+and reporting year. Debt-to-Equity is inverted so lower leverage receives a
+higher rank; missing observations remain null and are excluded only from that
+metric's distribution.
+
+Run the complete load and focused tests with:
+
+```bash
+make peer-percentiles PYTHON=.venv/bin/python
+make test-peer PYTHON=.venv/bin/python
+make day18-check PYTHON=.venv/bin/python
+```
+
+The verified execution produced 56 assignments across 11 groups, preserved
+11 official benchmarks and wrote 7,060 long-form metric rows. Of these, 5,589
+contain ranked values and 1,471 retain source nulls with a null rank. The 36
+unassigned companies are handled by the non-error message
+`No peer group assigned`. See `docs/day18_sprint3_peer_percentiles.md` and the
+four `output/peer_*.csv` evidence files.
+
+## Sprint 3 — radar charts
+
+Day 19 adds `src/analytics/radar.py` and generates one PNG radar chart for each
+of the 92 companies. The 56 companies with an official peer group are compared
+with the average of that group; the remaining 36 companies are compared with
+the Nifty 100 average.
+
+All eight axes use a consistent percentile scale from 0 to 100: ROE, ROCE, Net
+Profit Margin, inverted D/E, FCF Score, PAT CAGR 5yr, Revenue CAGR 5yr and the
+Sprint 3 Composite Score. A higher plot value is always better. Source nulls
+remain null in the audit; for polygon rendering only, a missing axis is shown
+at the relevant reference average and labelled in the chart footer.
+
+Generate and validate the charts with:
+
+```bash
+make radar-charts PYTHON=.venv/bin/python
+make test-radar PYTHON=.venv/bin/python
+make day19-check PYTHON=.venv/bin/python
+```
+
+The verified run produced 92 unique, non-empty PNG files in
+`reports/radar_charts/`, all at a readable high resolution. Technical details,
+the file-level audit and visual-review evidence are in
+`docs/day19_sprint3_radar_charts.md`, `output/radar_chart_audit.csv` and
+`output/radar_chart_visual_review.csv`.
+
+## Sprint 3 — peer comparison Excel report
+
+Day 20 adds `src/analytics/peer_report.py` and produces the final peer-group
+comparison workbook. It implements the documented interpretation of the
+specification: 20 raw KPIs plus the 10 percentiles officially classified on
+Day 18, alongside `company_id` and `company_name`.
+
+Generate, validate and test the report with:
+
+```bash
+make peer-comparison PYTHON=.venv/bin/python
+make test-peer-report PYTHON=.venv/bin/python
+make day20-check PYTHON=.venv/bin/python
+```
+
+`output/peer_comparison.xlsx` contains exactly 11 worksheets and represents
+all 56 assigned companies without duplication. Each worksheet identifies the
+official benchmark in gold, ends with a recomputed median row and applies the
+required green/yellow/red percentile bands. Full decisions and audit evidence
+are documented in `docs/day20_sprint3_peer_comparison.md` and
+`output/peer_comparison_audit.csv`.
+
+## Sprint 3 — final validation and release
+
+Day 21 adds `src/analytics/sprint3_review.py` and 35 integrated quality tests
+in `tests/analytics/test_sprint3_review.py`. The review verifies both SQLite
+PRAGMAs, the five highest-scoring Quality Compounder companies, D/E percentile
+inversion, IT Services, FMCG, all 17 Excel worksheets and a representative
+radar-chart sample.
+
+Run the focused and complete validation with:
+
+```bash
+make test-sprint3-review PYTHON=.venv/bin/python
+make day21-check PYTHON=.venv/bin/python
+```
+
+The verified release has 256 passing tests and zero failures. The database has
+1,155 `financial_ratios` rows covering all 92 companies; `foreign_key_check`
+returns no rows and `integrity_check` returns `ok`.
+
+Final technical evidence is available in:
+
+- `docs/sprint3_technical_report.md`;
+- `docs/sprint3_validation_report.md`;
+- `docs/sprint3_retro.md`;
+- `output/sprint3_validation_report.csv`;
+- `output/sprint3_final_summary.json`;
+- `output/day21_test_results.txt`.
+
+Four preset counts are within the expected 5–50 range. Value Pick and
+Debt-Free Blue Chip each return two companies under the immutable official
+thresholds. These are documented data-driven exceptions; the thresholds were
+not relaxed to manufacture a passing count.
